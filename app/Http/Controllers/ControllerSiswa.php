@@ -8,6 +8,6 @@ class ControllerSiswa extends Controller
 {
     public function index() 
     {
-        return view('siswa.index ');
+        return view('siswa.index');
     }
 }
