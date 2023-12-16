@@ -3,6 +3,8 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AgenController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\SiswaController;
+use App\Http\Middleware\Role;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -48,3 +50,15 @@ Route::get('/agen/dashboard', [AgenController::class,
 'AgenDashboard'])->name('agen.dashboard');
 
 }); //end group agen middleware
+
+Route::get('/admin/login', [AdminController::class, 'AdminLogin'])->name('admin.login');
+
+Route::get('/siswa', [SiswaController::class, 'SiswaData'])->name('siswa');
+
+Route::get('/siswa/tambah', [SiswaController::class, 'Tambah'])->name('siswa.tambah');
+
+// Route to store a new student in the database
+Route::post('/siswa/store', [SiswaController::class, 'store'])->name('siswa.store');
+
+
+//Route::resource('siswa', SiswaController::class);
