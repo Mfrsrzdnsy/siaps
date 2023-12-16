@@ -22,7 +22,7 @@
             <li class="nav-item">
                 <a href="/siswa" class="nav-link">
                     <i class="link-icon" data-feather="user"></i>
-                    <span class="link-title">Data Siswa
+                    <span class="link-title">Data Anak
                     </span>
                 </a>
             </li>

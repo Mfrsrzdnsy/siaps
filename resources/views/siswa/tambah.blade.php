@@ -1,96 +1,66 @@
 @extends('admin.admin_dashboard')
 
 @section('content')
-    <div class="col-lg-6 grid-margin stretch-card">
-        <div class="card">
-            <div class="card-body">
-                <h4 class="card-title">Form Validation</h4>
-                <p class="text-muted mb-3">Read the <a href="https://jqueryvalidation.org/" target="_blank"> Official jQuery
-                        Validation Documentation </a>for a full list of instructions and other options.</p>
-                <form id="signupForm" novalidate="novalidate">
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Name</label>
-                        <input id="name" class="form-control" name="name" type="text">
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input id="email" class="form-control" name="email" type="email">
-                    </div>
-                    <div class="mb-3">
-                        <label for="ageSelect" class="form-label">Age</label>
-                        <select class="form-select" name="age_select" id="ageSelect">
-                            <option selected="" disabled="">Select your age</option>
-                            <option>12-18</option>
-                            <option>18-22</option>
-                            <option>22-30</option>
-                            <option>30-60</option>
-                            <option>Above 60</option>
-                        </select>
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">Gender</label>
-                        <div>
-                            <div class="form-check form-check-inline">
-                                <input type="radio" class="form-check-input" name="gender_radio" id="gender1">
-                                <label class="form-check-label" for="gender1">
-                                    Male
-                                </label>
+    <div class="page-content">
+        <div class="row">
+            <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Form Tambah Data</h4>
+                        <form id="signupForm" method="POST">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">NIS</label>
+                                <input id="name" class="form-control" name="nis" type="text">
                             </div>
-                            <div class="form-check form-check-inline">
-                                <input type="radio" class="form-check-input" name="gender_radio" id="gender2">
-                                <label class="form-check-label" for="gender2">
-                                    Female
-                                </label>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nama</label>
+                                <input id="name" class="form-control" name="nama" type="text">
                             </div>
-                            <div class="form-check form-check-inline">
-                                <input type="radio" class="form-check-input" name="gender_radio" id="gender3">
-                                <label class="form-check-label" for="gender3">
-                                    Other
-                                </label>
+                            <div class="mb-3">
+                                <label class="form-label">Jenis Kelamin</label>
+                                <div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="gender_radio" id="gender1">
+                                        <label class="form-check-label" for="gender1">
+                                            Laki-laki
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="gender_radio" id="gender2">
+                                        <label class="form-check-label" for="gender2">
+                                            Perempuan
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="gender_radio" id="gender3">
+                                        <label class="form-check-label" for="gender3">
+                                            Lainnya
+                                        </label>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">Skills</label>
-                        <div>
-                            <div class="form-check form-check-inline">
-                                <input type="checkbox" name="skill_check" class="form-check-input" id="checkInline1">
-                                <label class="form-check-label" for="checkInline1">
-                                    Angular
-                                </label>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Tempat Lahir</label>
+                                <input id="name" class="form-control" name="tempat_lahir" type="text">
                             </div>
-                            <div class="form-check form-check-inline">
-                                <input type="checkbox" name="skill_check" class="form-check-input" id="checkInline2">
-                                <label class="form-check-label" for="checkInline2">
-                                    ReactJs
-                                </label>
+                            <div class="mb-3">
+                                <label class="form-label">Tanggal Lahir</label>
+                                <input class="form-control mb-4 mb-md-0" type="date">
                             </div>
-                            <div class="form-check form-check-inline">
-                                <input type="checkbox" name="skill_check" class="form-check-input" id="checkInline3">
-                                <label class="form-check-label" for="checkInline3">
-                                    VueJs
-                                </label>
+                            <div class="mb-3">
+                                <label for="defaultconfig-4" class="col-form-label">Alamat</label>
+                                <textarea id="maxlength-textarea" class="form-control" maxlength="100" rows="8"
+                                    placeholder="Masukan Alamat..."></textarea>
                             </div>
-                        </div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="password" class="form-label">Password</label>
-                        <input id="password" class="form-control" name="password" type="password">
-                    </div>
-                    <div class="mb-3">
-                        <label for="confirm_password" class="form-label">Confirm password</label>
-                        <input id="confirm_password" class="form-control" name="confirm_password" type="password">
-                    </div>
-                    <div class="mb-3">
-                        <div class="form-check">
-                            <label class="form-check-label" for="termsCheck">
-                                Agree to <a href="#"> terms and conditions </a>
-                            </label>
-                            <input type="checkbox" class="form-check-input" name="terms_agree" id="termsCheck">
-                        </div>
+                            <div class="mb-3">
+                                <label for="defaultconfig-4" class="col-form-label">Deskripsi</label>
+                                <textarea id="maxlength-textarea" class="form-control" maxlength="100" rows="8"
+                                    placeholder="Masukan Deskripsi..."></textarea>
+                            </div>
                     </div>
                     <input class="btn btn-primary" type="submit" value="Submit">
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
     </div>

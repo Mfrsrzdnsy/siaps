@@ -17,8 +17,11 @@
     <body class="font-sans text-gray-900 antialiased">
         <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100 dark:bg-gray-900">
             <div>
+                
                 <a href="/">
-                    <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
+                    <span class="text-4xl font-bold text-gray-800 dark:text-white" 
+                    style="font-size: 50px; color: #0a3676; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+                        Siaps</span>
                 </a>
             </div>
 

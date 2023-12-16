@@ -7,7 +7,7 @@
       <div class="col-md-12 grid-margin stretch-card">
         <div class="card">
           <div class="card-body">
-            <h6 class="card-title">Data Siswa</h6>
+            <h6 class="card-title">Data Anak</h6>
             <div class="d-flex justify-content-end">
                 <a href="{{ route('siswa.tambah') }}" class="btn btn-primary ml-auto">Tambah Data</a>
             </div>
@@ -23,6 +23,7 @@
                     <th>Alamat</th>
                     <th>Pendidikan Terakhir</th>
                     <th>Deskripsi</th>
+                    <th>aksi</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -36,6 +37,10 @@
                       <td>{{ $siswa->alamat }}</td>
                       <td>{{ $siswa->pendidikan_terakhir }}</td>
                       <td>{{ $siswa->deskripsi }}</td>
+                      <td>
+                        <a href="" class="btn btn-success">Edit</a>
+                        <a href="" class="btn btn-danger">Hapus</a>
+                    </td>
                     </tr>
                   @endforeach
                 </tbody>
