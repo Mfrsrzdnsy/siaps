@@ -1,0 +1,26 @@
+[2023-12-18 08:06:59] local.INFO: Simpan Data Siswa  
+[2023-12-18 08:06:59] local.ERROR: Error saving data: The pendidikan terakhir field is required.  
+[2023-12-18 08:08:56] local.INFO: Simpan Data Siswa  
+[2023-12-18 08:08:56] local.ERROR: Error saving data: The pendidikan terakhir field is required.  
+[2023-12-18 08:32:01] local.INFO: Simpan Data Siswa  
+[2023-12-18 08:32:01] local.ERROR: Error saving data: The pendidikan terakhir field is required.  
+[2023-12-18 08:33:30] local.INFO: Simpan Data Siswa  
+[2023-12-18 08:33:30] local.ERROR: Error saving data: Undefined variable $data  
+[2023-12-18 08:39:36] local.INFO: Simpan Data Siswa  
+[2023-12-18 08:39:36] local.ERROR: Error saving data: The pendidikan terakhir field is required.  
+[2023-12-18 08:40:45] local.INFO: Simpan Data Siswa  
+[2023-12-18 08:40:45] local.ERROR: Error saving data: The pendidikan terakhir field is required.  
+[2023-12-18 08:42:43] local.INFO: Simpan Data Siswa  
+[2023-12-18 08:42:43] local.ERROR: Error saving data: The pendidikan terakhir field is required.  
+[2023-12-18 08:43:47] local.INFO: Simpan Data Siswa  
+[2023-12-18 08:43:47] local.ERROR: Error saving data: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'pendidikan_terakhir' cannot be null (Connection: mysql, SQL: insert into `table_siswa` (`nis`, `nama`, `jenis_kelamin`, `tempat_lahir`, `tanggal_lahir`, `alamat`, `pendidikan_terakhir`, `deskripsi`, `updated_at`, `created_at`) values (333, yuanda, laki-laki, sumbawa, 2023-12-18, gsgsegs, ?, esgesggesg, 2023-12-18 08:43:47, 2023-12-18 08:43:47))  
+[2023-12-18 08:44:17] local.INFO: Simpan Data Siswa  
+[2023-12-18 08:44:17] local.ERROR: Error saving data: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'pendidikan_terakhir' cannot be null (Connection: mysql, SQL: insert into `table_siswa` (`nis`, `nama`, `jenis_kelamin`, `tempat_lahir`, `tanggal_lahir`, `alamat`, `pendidikan_terakhir`, `deskripsi`) values (333, yuanda, laki-laki, sumbawa, 2023-12-18, fuyfifiufiyfifif, ?, fuifiufifiufiuf))  
+[2023-12-18 08:47:59] local.INFO: Simpan Data Siswa  
+[2023-12-18 08:47:59] local.INFO: Data siswa berhasil ditambahkan.  
+[2023-12-18 09:00:00] local.INFO: Simpan Data Siswa  
+[2023-12-18 09:00:01] local.INFO: Data siswa berhasil ditambahkan.  
+[2023-12-18 09:04:41] local.INFO: Simpan Data Siswa  
+[2023-12-18 09:04:41] local.ERROR: Error saving data: The nis field is required. (and 7 more errors)  
+[2023-12-18 09:06:10] local.INFO: Simpan Data Siswa  
+[2023-12-18 09:06:10] local.ERROR: Error saving data: The nis field is required. (and 7 more errors)  

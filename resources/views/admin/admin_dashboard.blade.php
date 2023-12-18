@@ -12,6 +12,9 @@
 
     <title>Panel Admin</title>
 
+    {{-- Font Awesome --}}
+    <link rel="stylesheet" href="{{ asset('assets/css/all.min.css') }}">
+    {{-- Font Awesome --}}
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -60,6 +63,10 @@
         </div>
     </div>
 
+    {{-- Font Awesome --}}
+    <script src="{{ asset('assets/js/all.min.js') }}"></script>
+    {{-- End Font Awesome --}}
+
     <!-- core:js -->
     <script src="{{ asset('../assets/vendors/core/core.js') }}"></script>
     <!-- endinject -->
@@ -86,7 +93,7 @@
 
     <!-- Custom js for this page -->
     <script src="{{ asset('../assets/js/dashboard-dark.js') }}"></script>
-    <script src="{{ asset('../../../assets/js/form-validation.js') }}"></script>
+    {{-- <script src="{{ asset('../../../assets/js/form-validation.js') }}"></script> --}}
 	<script src="{{ asset('../../../assets/js/bootstrap-maxlength.js') }}"></script>
 	<script src="{{ asset('../../../assets/js/inputmask.js') }}"></script>
 	<script src="{{ asset('../../../assets/js/select2.js') }}"></script>
