@@ -55,7 +55,7 @@
         <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
         <label for="floatingTextarea2">Alasan Putus Sekolah</label>
     </div><br>
-   
+
     <button type="submit" class="btn btn-primary">Submit</button>
     
     </fieldset>

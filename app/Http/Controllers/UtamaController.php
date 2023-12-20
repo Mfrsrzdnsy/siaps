@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Berita;
 use Illuminate\Http\Request;
+
 
 // dengan index adalah nama methodnya => public function index()
 class UtamaController extends Controller
@@ -14,6 +16,8 @@ class UtamaController extends Controller
             "image" => "anak.jpg"
     ]);
     }
+
+
     public function profil()
     {
     return view('utama/Profil', [
@@ -36,10 +40,5 @@ class UtamaController extends Controller
     ]);
     }
 
-    // untuk menampilkan hal diambil dari AuthenticatedSessionController
-    public function login_siaps()
-    {  
-            return view('auth.login');
-    }    
 }
    

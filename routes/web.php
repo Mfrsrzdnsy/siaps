@@ -3,10 +3,11 @@
 use App\Http\Middleware\Role;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AgenController;
-use App\Http\Controllers\UtamaController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\SiswaController;
+use App\Http\Controllers\UtamaController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\Auth\AuthenticatedSessionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -68,4 +69,5 @@ Route::get('/pelaporan', [UtamaController::class, 'pelaporan']);
 
 Route::get('/contact', [UtamaController::class, 'contact']);
 
-Route::get('/login_siaps', [UtamaController::class, 'login_siaps']);
+Route::get('/login_siaps', [AuthenticatedSessionController::class, 'login_siaps']);
+

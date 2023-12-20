@@ -1,3 +1,7 @@
+@extends('layouts.home')
+
+@section('container')
+
 <x-guest-layout>
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
@@ -46,3 +50,7 @@
         </div>
     </form>
 </x-guest-layout>
+
+
+@endsection
+<section style="background-image: url(./image/anak.jpg); background-size: cover; background-repeat: no-repeat; height: 800px;">
