@@ -65,8 +65,6 @@ Route::get('/home', [UtamaController::class, 'home']);
 
 Route::get('/profil', [UtamaController::class, 'profil']);
 
-Route::get('/pelaporan', [UtamaController::class, 'pelaporan']);
-
 Route::get('/contact', [UtamaController::class, 'contact']);
 
 Route::get('/login_siaps', [AuthenticatedSessionController::class, 'login_siaps']);

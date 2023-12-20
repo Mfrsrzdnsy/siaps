@@ -28,11 +28,6 @@ class UtamaController extends Controller
     ]);
     }
     
-    public function pelaporan()
-    {
-        return view('utama/Pelaporan', ["title" => "pelaporan"
-    ]);
-    }
 
     public function contact()
     {
