@@ -11,7 +11,7 @@
         <ul class="navbar-nav">
             {{-- {{ ($title === "Home") ? 'active' : '' }} diberikan untuk memberikan tanda aktif pada setiap navbar yang sedang dijalankan --}}
           <li class="nav-item">
-            <a class="nav-link {{ ($title === "home") ? 'active' : '' }}" href="/home"><i class="bi bi-house-door"></i>Home</a>
+            <a class="nav-link {{ ($title === "home") ? 'active' : '' }}" href="/home"></i>Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link {{ ($title === "profil") ? 'active' : '' }}" href="/profil">Profil</a>
