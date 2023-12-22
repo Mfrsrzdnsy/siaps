@@ -35,12 +35,6 @@
                                             Perempuan
                                         </label>
                                     </div>
-                                    <div class="form-check form-check-inline">
-                                        <input type="radio" class="form-check-input" name="jenis_kelamin" id="gender3" value="lainnya">
-                                        <label class="form-check-label" for="gender3">
-                                            Lainnya
-                                        </label>
-                                    </div>
                                 </div>
                             </div>                            
                             <div class="mb-3">
