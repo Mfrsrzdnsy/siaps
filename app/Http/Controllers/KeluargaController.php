@@ -25,10 +25,10 @@ class KeluargaController extends Controller
                 'nama' => 'required|string|max:100',
                 'nama_ayah' => 'required|string|max:100',
                 'nama_ibu' => 'required|string|max:100',
-                'jumlah saudara' => 'required|in:1,2,3,4,5,lainnya',
+                'jumlah_saudara' => 'required|in:1,2,3,lainnya',
                 'alamat' => 'required|string',
-                'pendidikan_terakhir_ayah' => 'required|string|max:255',
-                'pendidikan_terakhir_ibu' => 'required|string|max:255',
+                'pendidikan_ayah' => 'required|string|max:255',
+                'pendidikan_ibu' => 'required|string|max:255',
                 'deskripsi' => 'required|string',
             ]);
 
@@ -38,8 +38,8 @@ class KeluargaController extends Controller
                 'nama_ibu' =>  $request->nama_ibu,
                 'jumlah_saudara' => $request->jumlah_saudara,
                 'alamat' => $request->alamat,
-                'pendidikan_terakhir_ayah' =>  $request->pendidikan_terakhir_ayah,
-                'pendidikan_terakhir_ibu' =>  $request->pendidikan_terakhir_ibu,
+                'pendidikan_ayah' =>  $request->pendidikan_ayah,
+                'pendidikan_ibu' =>  $request->pendidikan_ibu,
                 'deskripsi' =>  $request->deskripsi,
             ]);
 
@@ -57,15 +57,15 @@ class KeluargaController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $sid = $request->id;
+        $kid = $request->id;
         KeluargaModel::findOrFail($id)->update([
             'nama' =>  $request->nama,
             'nama_ayah' =>  $request->nama_ayah,
             'nama_ibu' =>  $request->nama_ibu,
             'jumlah_saudara' => $request->jumlah_saudara,
             'alamat' => $request->alamat,
-            'pendidikan_terakhir_ayah' =>  $request->pendidikan_terakhir_ayah,
-            'pendidikan_terakhir_ibu' =>  $request->pendidikan_terakhir_ibu,
+            'pendidikan_ayah' =>  $request->pendidikan_ayah,
+            'pendidikan_ibu' =>  $request->pendidikan_ibu,
             'deskripsi' =>  $request->deskripsi,
 
         ]);
@@ -80,7 +80,7 @@ class KeluargaController extends Controller
     {
         KeluargaModel::findOrFail($id)->delete();
 
-        return redirect()->route('kelarga.index');
+        return redirect()->route('keluarga.index');
     } 
     
 

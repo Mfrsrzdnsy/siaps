@@ -7,7 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class KeluargaModel extends Model
 {
-    use HasFactory;
     protected $table = 'table_keluarga';
 
     protected $primaryKey = 'id_keluarga';
@@ -16,10 +15,10 @@ class KeluargaModel extends Model
         'nama',
         'nama_ayah',
         'nama_ibu',
-        'jumlah saudara',
+        'jumlah_saudara',
         'alamat',
-        'pendidikan_terakhir_ayah',
-        'pendidikan_terakhir_ibu',
+        'pendidikan_ayah',
+        'pendidikan_ibu',
         'deskripsi',
     ];
 
