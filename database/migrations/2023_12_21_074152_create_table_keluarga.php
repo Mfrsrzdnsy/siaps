@@ -13,11 +13,12 @@ return new class extends Migration
     {
             Schema::create('table_keluarga', function (Blueprint $table) {
                 $table->id('id_keluarga');
-                $table->string('nis', 20);
-                $table->string('nama', 50);
-                $table->string('jenis_kelamin');
-                $table->string('tempat_lahir', 50);
-                $table->date('tanggal_lahir');
+                $table->string('nama', 100);
+                $table->string('nama_ayah', 100);
+                $table->string('nama_ibu', 100);
+                $table->string('jumlah_saudara');
+                $table->string('pendidikan_terakhir_ayah', 255);
+                $table->string('pendidikan_terakhir_ibu', 255);
                 $table->text('alamat');
                 $table->string('pendidikan_terakhir', 255);
                 $table->text('deskripsi');

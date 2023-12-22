@@ -8,20 +8,19 @@ use Illuminate\Database\Eloquent\Model;
 class KeluargaModel extends Model
 {
     use HasFactory;
-    protected $table = 'table_siswa';
+    protected $table = 'table_keluarga';
 
-    protected $primaryKey = 'id_siswa';
+    protected $primaryKey = 'id_keluarga';
 
     protected $fillable = [
-        'nis',
         'nama',
-        'jenis_kelamin',
-        'tempat_lahir',
-        'tanggal_lahir',
+        'nama_ayah',
+        'nama_ibu',
+        'jumlah saudara',
         'alamat',
-        'pendidikan_terakhir',
+        'pendidikan_terakhir_ayah',
+        'pendidikan_terakhir_ibu',
         'deskripsi',
     ];
 
-    protected $dates = ['tanggal_lahir'];
 }
