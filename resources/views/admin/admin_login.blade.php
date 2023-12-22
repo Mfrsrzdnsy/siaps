@@ -55,7 +55,7 @@
                                 <div class="col-md-8 ps-md-0">
                                     <div class="auth-form-wrapper px-4 py-5">
                                         <a href="#"
-                                            class="noble-ui-logo logo-light d-block mb-2">Si<span>Aps</span></a>
+                                            class="noble-ui-logo logo-light d-block mb-2">SIAPS</a>
                                         <h5 class="text-muted fw-normal mb-4">Selamat datang kembali! Masuk ke akun
                                             Anda.</h5>
 

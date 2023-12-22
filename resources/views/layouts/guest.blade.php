@@ -20,8 +20,8 @@
                 
                 <a href="/">
                     <span class="text-4xl font-bold text-gray-800 dark:text-white" 
-                    style="font-size: 30px; color: #0a3676; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
-                        Login</span>
+                    style="font-size: 20px; color: #0a3676; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+                        SIAPS</span>
                 </a>
             </div>
 
