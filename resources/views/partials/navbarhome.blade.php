@@ -9,7 +9,6 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-size: 20px; color: #041227;">
         <ul class="navbar-nav">
-            {{-- {{ ($title === "Home") ? 'active' : '' }} diberikan untuk memberikan tanda aktif pada setiap navbar yang sedang dijalankan --}}
           <li class="nav-item">
             <a class="nav-link {{ ($title === "home") ? 'active' : '' }}" href="/home"></i>Home</a>
           </li>
@@ -21,7 +20,7 @@
           </li>
         </ul>
 
-        {{-- <ul class="navbar-nav ms-auto">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <a class="nav-link {{ ($title === "login") ? 'active' : '' }}" href="/login"><i class="bi bi-box-arrow-in-right"></i> Login</a>
           </li>
