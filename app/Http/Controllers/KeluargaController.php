@@ -26,7 +26,7 @@ class KeluargaController extends Controller
                 'nama' => 'required|string|max:100',
                 'nama_ayah' => 'required|string|max:100',
                 'nama_ibu' => 'required|string|max:100',
-                'jumlah_saudara' => 'required|in:1,2,3,lainnya',
+                'jumlah_saudara' => 'required|in:1,2,3,4,5,6,7,8',
                 'pendidikan_ayah' => 'required|string|max:255',
                 'pendidikan_ibu' => 'required|string|max:255',
                 'alamat' => 'required|string',

@@ -7,7 +7,8 @@
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title">Form Edit Data</h4>
-                        <form id="signupForm" method="POST" action="{{ route('keluarga.update', $data->id_keluarga) }}" enctype="multipart/form-data">
+                        <form id="signupForm" method="POST" action="{{ route('keluarga.update', $data->id_keluarga) }}"
+                            enctype="multipart/form-data">
                             @csrf
                             @method('PUT')
                             <div class="mb-3">
@@ -28,34 +29,18 @@
                             <div class="mb-3">
                                 <label class="form-label">Jumlah Bersaudara</label>
                                 <div>
-                                    <div class="form-check form-check-inline">
-                                        <input @if ($data->jumlah_saudara === '1') checked @endif type="radio"
-                                            class="form-check-input" name="jumlah_saudara" id="saudara1" value="satu">
-                                        <label class="form-check-label" for="saudara1">
-                                            1
-                                        </label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input @if ($data->jumlah_saudara === '2') checked @endif type="radio"
-                                            class="form-check-input" name="jumlah_saudara" id="saudara2" value="dua">
-                                        <label class="form-check-label" for="saudara2">
-                                            2
-                                        </label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input @if ($data->jumlah_saudara === '3') checked @endif type="radio"
-                                            class="form-check-input" name="jumlah_saudara" id="saudara3" value="tiga">
-                                        <label class="form-check-label" for="saudara3">
-                                            3
-                                        </label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input @if ($data->jumlah_saudara === '4') checked @endif type="radio"
-                                            class="form-check-input" name="jumlah_saudara" id="saudara4" value="empat">
-                                        <label class="form-check-label" for="saudara4">
-                                            Lainnya
-                                        </label>
-                                    </div>
+                                    <select name="jumlah_saudara" class="form-select" aria-label="Default select example"
+                                        required>
+                                        <option value="">--- Pilih Jumlah Saudara ---</option>
+                                        <option value="1" @if ($data->jumlah_saudara === '1') selected @endif>1</option>
+                                        <option value="2" @if ($data->jumlah_saudara === '2') selected @endif>2</option>
+                                        <option value="3" @if ($data->jumlah_saudara === '3') selected @endif>3</option>
+                                        <option value="4" @if ($data->jumlah_saudara === '4') selected @endif>4</option>
+                                        <option value="5" @if ($data->jumlah_saudara === '5') selected @endif>5</option>
+                                        <option value="6" @if ($data->jumlah_saudara === '6') selected @endif>6</option>
+                                        <option value="7" @if ($data->jumlah_saudara === '7') selected @endif>7</option>
+                                        <option value="8" @if ($data->jumlah_saudara === '8') selected @endif>8</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="mb-3">
@@ -68,7 +53,7 @@
                                 <input id="pendidikan_ibu" class="form-control" value="{{ $data->pendidikan_ibu }}"
                                     name="pendidikan_ibu" type="text">
                             </div>
-                            
+
                             <div class="mb-3">
                                 <label for="defaultconfig-4" class="col-form-label">Alamat</label>
                                 <textarea id="maxlength-textarea" class="form-control" name="alamat" maxlength="100" rows="8"
