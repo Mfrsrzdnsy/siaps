@@ -8,8 +8,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-size: 20px; color: #041227;">
-        <ul class="navbar-nav">
-            {{-- {{ ($title === "Home") ? 'active' : '' }} diberikan untuk memberikan tanda aktif pada setiap navbar yang sedang dijalankan --}}
+        <ul class="navbar-nav">git 
           <li class="nav-item">
             <a class="nav-link {{ ($title === "home") ? 'active' : '' }}" href="/home"></i>Home</a>
           </li>
