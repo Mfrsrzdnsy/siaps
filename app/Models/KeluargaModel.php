@@ -16,9 +16,9 @@ class KeluargaModel extends Model
         'nama_ayah',
         'nama_ibu',
         'jumlah_saudara',
-        'alamat',
         'pendidikan_ayah',
         'pendidikan_ibu',
+        'alamat',
         'deskripsi',
     ];
 

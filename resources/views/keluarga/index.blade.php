@@ -18,9 +18,6 @@
                                         <th>Nama</th>
                                         <th>Nama Ayah</th>
                                         <th>Nama Ibu</th>
-                                        <th>Jumlah Saudara</th>
-                                        <th>Pendidikan Terakhir Ayah</th>
-                                        <th>Pendidikan Terakhir Ibu</th>
                                         <th>Alamat</th>
                                         <th>aksi</th>
                                     </tr>
@@ -31,9 +28,6 @@
                                             <td>{{ $keluarga->nama }}</td>
                                             <td>{{ $keluarga->nama_ayah }}</td>
                                             <td>{{ $keluarga->nama_ibu }}</td>
-                                            <td>{{ $keluarga->jumlah_saudara }}</td>
-                                            <td>{{ $keluarga->pendidikan_ayah }}</td>
-                                            <td>{{ $keluarga->pendidikan_ibu }}</td>
                                             <td>{{ $keluarga->alamat }}</td>
                                             <td style="display: flex">
                                                 <button type="button" class="btn btn-primary" style="margin-right: 5px;"

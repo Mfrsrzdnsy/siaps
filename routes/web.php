@@ -8,6 +8,7 @@ use App\Http\Controllers\SiswaController;
 use App\Http\Controllers\UtamaController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
+use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\KeluargaController;
 
 /*
@@ -60,6 +61,7 @@ Route::middleware(['auth', 'role:agen'])->group(function () {
 Route::get('/admin/login', [AdminController::class, 'AdminLogin'])->name('admin.login');
 
 Route::resource('siswa', SiswaController::class);
+
 Route::resource('keluarga', KeluargaController::class);
 
 // halaman utama
@@ -72,5 +74,3 @@ Route::get('/contact', [UtamaController::class, 'contact']);
 Route::get('/login_siaps', [AuthenticatedSessionController::class, 'login']);
 
 Route::get('/register_siaps', [RegisteredUserController::class, 'register']);
-
-

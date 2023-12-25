@@ -29,28 +29,28 @@
                                 <label class="form-label">Jumlah Bersaudara</label>
                                 <div>
                                     <div class="form-check form-check-inline">
-                                        <input @if ($data->jumlah_saudara === 'satu') checked @endif type="radio"
+                                        <input @if ($data->jumlah_saudara === '1') checked @endif type="radio"
                                             class="form-check-input" name="jumlah_saudara" id="saudara1" value="satu">
                                         <label class="form-check-label" for="saudara1">
                                             1
                                         </label>
                                     </div>
                                     <div class="form-check form-check-inline">
-                                        <input @if ($data->jumlah_saudara === 'dua') checked @endif type="radio"
+                                        <input @if ($data->jumlah_saudara === '2') checked @endif type="radio"
                                             class="form-check-input" name="jumlah_saudara" id="saudara2" value="dua">
                                         <label class="form-check-label" for="saudara2">
                                             2
                                         </label>
                                     </div>
                                     <div class="form-check form-check-inline">
-                                        <input @if ($data->jumlah_saudara === 'tiga') checked @endif type="radio"
+                                        <input @if ($data->jumlah_saudara === '3') checked @endif type="radio"
                                             class="form-check-input" name="jumlah_saudara" id="saudara3" value="tiga">
                                         <label class="form-check-label" for="saudara3">
                                             3
                                         </label>
                                     </div>
                                     <div class="form-check form-check-inline">
-                                        <input @if ($data->jumlah_saudara === 'empat') checked @endif type="radio"
+                                        <input @if ($data->jumlah_saudara === '4') checked @endif type="radio"
                                             class="form-check-input" name="jumlah_saudara" id="saudara4" value="empat">
                                         <label class="form-check-label" for="saudara4">
                                             Lainnya

@@ -24,19 +24,21 @@
                                 <label class="form-label">Jenis Kelamin</label>
                                 <div>
                                     <div class="form-check form-check-inline">
-                                        <input type="radio" class="form-check-input" name="jenis_kelamin" id="gender1" value="laki-laki">
+                                        <input type="radio" class="form-check-input" name="jenis_kelamin" id="gender1"
+                                            value="laki-laki">
                                         <label class="form-check-label" for="gender1">
                                             Laki-laki
                                         </label>
                                     </div>
                                     <div class="form-check form-check-inline">
-                                        <input type="radio" class="form-check-input" name="jenis_kelamin" id="gender2" value="perempuan">
+                                        <input type="radio" class="form-check-input" name="jenis_kelamin" id="gender2"
+                                            value="perempuan">
                                         <label class="form-check-label" for="gender2">
                                             Perempuan
                                         </label>
                                     </div>
                                 </div>
-                            </div>                            
+                            </div>
                             <div class="mb-3">
                                 <label for="tempat_lahir" class="form-label">Tempat Lahir</label>
                                 <input id="tempat_lahir" class="form-control" name="tempat_lahir" type="text">
@@ -60,14 +62,12 @@
                                 <textarea id="maxlength-textarea" class="form-control" name="deskripsi" maxlength="100" rows="8"
                                     placeholder="Masukan Deskripsi..."></textarea>
                             </div>
+                            <div>
+                                <button type="submit" class="btn btn-primary"> Simpan</button>
+                            </div>
+                        </form>
                     </div>
-                    <div>
-                        
-                    <button type="submit" class="btn btn-primary"> Simpan</button>
-                    </div>
-                    </form>
                 </div>
             </div>
         </div>
-    </div>
-@endsection
+    @endsection

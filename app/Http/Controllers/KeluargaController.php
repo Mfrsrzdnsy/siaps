@@ -12,6 +12,7 @@ class KeluargaController extends Controller
         $keluargas = KeluargaModel::all();
         return view('keluarga.index', compact('keluargas'));
     }
+
     
     public function create()
     {
@@ -26,9 +27,9 @@ class KeluargaController extends Controller
                 'nama_ayah' => 'required|string|max:100',
                 'nama_ibu' => 'required|string|max:100',
                 'jumlah_saudara' => 'required|in:1,2,3,lainnya',
-                'alamat' => 'required|string',
                 'pendidikan_ayah' => 'required|string|max:255',
                 'pendidikan_ibu' => 'required|string|max:255',
+                'alamat' => 'required|string',
                 'deskripsi' => 'required|string',
             ]);
 
@@ -37,9 +38,9 @@ class KeluargaController extends Controller
                 'nama_ayah' =>  $request->nama_ayah,
                 'nama_ibu' =>  $request->nama_ibu,
                 'jumlah_saudara' => $request->jumlah_saudara,
-                'alamat' => $request->alamat,
                 'pendidikan_ayah' =>  $request->pendidikan_ayah,
                 'pendidikan_ibu' =>  $request->pendidikan_ibu,
+                'alamat' => $request->alamat,
                 'deskripsi' =>  $request->deskripsi,
             ]);
 
@@ -63,9 +64,9 @@ class KeluargaController extends Controller
             'nama_ayah' =>  $request->nama_ayah,
             'nama_ibu' =>  $request->nama_ibu,
             'jumlah_saudara' => $request->jumlah_saudara,
-            'alamat' => $request->alamat,
             'pendidikan_ayah' =>  $request->pendidikan_ayah,
             'pendidikan_ibu' =>  $request->pendidikan_ibu,
+            'alamat' => $request->alamat,
             'deskripsi' =>  $request->deskripsi,
 
         ]);

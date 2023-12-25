@@ -19,6 +19,8 @@
                                 @error('nama_ayah')
                                     <span class="text-danger">{{ $message }}</span>
                                 @enderror
+                            </div>
+                            <div class="mb-3">
                                 <label for="nama_ibu " class="form-label">Nama Ibu</label>
                                 <input id="nama_ibu" class="form-control" name="nama_ibu" type="text">
                                 @error('nama_ibu')
@@ -29,25 +31,25 @@
                                 <label class="form-label">Jumlah Bersaudara</label>
                                 <div>
                                     <div class="form-check form-check-inline">
-                                        <input type="radio" class="form-check-input" name="jumlah_saudara" id="saudara1" value="satu">
+                                        <input type="radio" class="form-check-input" name="jumlah_saudara" id="saudara1" value="1">
                                         <label class="form-check-label" for="saudara1">
                                             1
                                         </label>
                                     </div>
                                     <div class="form-check form-check-inline">
-                                        <input type="radio" class="form-check-input" name="jumlah_saudara" id="saudara2" value="dua">
+                                        <input type="radio" class="form-check-input" name="jumlah_saudara" id="saudara2" value="2">
                                         <label class="form-check-label" for="saudara2">
                                             2
                                         </label>
                                     </div>
                                     <div class="form-check form-check-inline">
-                                        <input type="radio" class="form-check-input" name="jumlah_saudara" id="saudara3" value="tiga">
+                                        <input type="radio" class="form-check-input" name="jumlah_saudara" id="saudara3" value="3">
                                         <label class="form-check-label" for="saudara3">
                                             3
                                         </label>
                                     </div>
                                     <div class="form-check form-check-inline">
-                                        <input type="radio" class="form-check-input" name="jumlah_saudara" id="saudara4" value="empat">
+                                        <input type="radio" class="form-check-input" name="jumlah_saudara" id="saudara4" value="4">
                                         <label class="form-check-label" for="saudara4">
                                             Lainnya
                                         </label>
@@ -72,7 +74,6 @@
                                 <textarea id="maxlength-textarea" class="form-control" name="deskripsi" maxlength="100" rows="8"
                                     placeholder="Masukan Deskripsi..."></textarea>
                             </div>
-                    </div>
                     <div>
                         
                     <button type="submit" class="btn btn-primary"> Simpan</button>
