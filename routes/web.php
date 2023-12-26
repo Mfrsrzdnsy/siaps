@@ -10,6 +10,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\KeluargaController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,6 +39,8 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__ . '/auth.php';
 
+
+//group admin middleware
 Route::middleware(['auth', 'role:admin'])->group(function () {
 
     Route::get('/admin/dashboard', [
@@ -50,6 +53,8 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
     Route::get('/admin/profil', [AdminController::class, 'AdminProfile'])->name('admin.profile');
 }); //end group admin middleware
 
+
+//group agen middleware
 Route::middleware(['auth', 'role:agen'])->group(function () {
 
     Route::get('/agen/dashboard', [
@@ -58,11 +63,17 @@ Route::middleware(['auth', 'role:agen'])->group(function () {
     ])->name('agen.dashboard');
 }); //end group agen middleware
 
+
 Route::get('/admin/login', [AdminController::class, 'AdminLogin'])->name('admin.login');
 
-Route::resource('siswa', SiswaController::class);
 
+//routes untuk semua
+Route::resource('siswa', SiswaController::class);
 Route::resource('keluarga', KeluargaController::class);
+Route::resource('user', UserController::class);
+//end routes
+
+
 
 // halaman utama
 Route::get('/home', [UtamaController::class, 'home']);

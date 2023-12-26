@@ -42,10 +42,10 @@
             <div class="collapse" id="emails">
               <ul class="nav sub-menu">
                 <li class="nav-item">
-                  <a href="../../pages/email/inbox.html" class="nav-link">Add User</a>
+                  <a href="{{ route('user.create') }}" class="nav-link">Add User</a>
                 </li>
                 <li class="nav-item">
-                  <a href="../../pages/email/read.html" class="nav-link">Data User</a>
+                  <a href="/user" class="nav-link">Data User</a>
                 </li>
               </ul>
             </div>
