@@ -14,7 +14,7 @@
     
       
       {{-- beritahukan bahwa disini akan tersimpan sebuah navbar yang diambil dari halaman parsial.navbar --}}
-      @include('partials.navbar')
+      @include('partials.navbarmain')
       
 
       {{-- mt=margin top --}}

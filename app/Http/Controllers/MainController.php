@@ -7,11 +7,11 @@ use Illuminate\Http\Request;
 
 
 // dengan index adalah nama methodnya => public function index()
-class UtamaController extends Controller
+class MainController extends Controller
 {
     public function home()
     {
-        return view('utama/home', [
+        return view('main/home', [
             "title" => "home",
             "image" => "anak.jpg"
     ]);
@@ -20,7 +20,7 @@ class UtamaController extends Controller
 
     public function profil()
     {
-    return view('utama/Profil', [
+    return view('main/Profil', [
         "title" => "profil",  
         "nama" => "anak anak",
         "email" => "anakputussekolah@gmail.com",
@@ -31,7 +31,7 @@ class UtamaController extends Controller
 
     public function contact()
     {
-        return view('utama/contact', ["title" => "contact"
+        return view('main/contact', ["title" => "contact"
     ]);
     }
 

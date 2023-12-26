@@ -3,12 +3,12 @@
 use App\Http\Middleware\Role;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AgenController;
+use App\Http\Controllers\MainController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\SiswaController;
-use App\Http\Controllers\UtamaController;
 use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\KeluargaController;
+use App\Http\Controllers\Auth\AuthenticatedSessionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -63,11 +63,11 @@ Route::resource('siswa', SiswaController::class);
 Route::resource('keluarga', KeluargaController::class);
 
 // halaman utama
-Route::get('/home', [UtamaController::class, 'home']);
+Route::get('/home', [MainController::class, 'home']);
 
-Route::get('/profil', [UtamaController::class, 'profil']);
+Route::get('/profil', [MainController::class, 'profil']);
 
-Route::get('/contact', [UtamaController::class, 'contact']);
+Route::get('/contact', [MainController::class, 'contact']);
 
 Route::get('/login_siaps', [AuthenticatedSessionController::class, 'login']);
 

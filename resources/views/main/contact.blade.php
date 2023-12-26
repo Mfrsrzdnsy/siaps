@@ -3,7 +3,7 @@
 
 @section('container')
 
-<div class="card">
+<div class="card border border-0">
     <div class="card-body">
       <h3 class="text-center"><i class="bi bi-telephone"></i> Hubungi kami</h3>
       <h5 class="text-center"><i class="bi bi-phone"></i> telp. 08*********</h5>
