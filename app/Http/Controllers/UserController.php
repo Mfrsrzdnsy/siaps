@@ -17,4 +17,13 @@ class UserController extends Controller
     {
         return view('user.create');
     }
+
+
+
+    public function destroy($id)
+    {
+        UserModel::findOrFail($id)->delete();
+
+        return redirect()->route('user.index');
+    }
 }

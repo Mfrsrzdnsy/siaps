@@ -41,9 +41,9 @@
             </a>
             <div class="collapse" id="emails">
               <ul class="nav sub-menu">
-                <li class="nav-item">
-                  <a href="{{ route('user.create') }}" class="nav-link">Add User</a>
-                </li>
+                {{-- <li class="nav-item">
+                  <a href="/user/create" class="nav-link">Add User</a>
+                </li> --}}
                 <li class="nav-item">
                   <a href="/user" class="nav-link">Data User</a>
                 </li>

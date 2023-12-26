@@ -50,8 +50,10 @@
                                                                     <div class="card-body">
                                                                         <table class="table" border="0">
                                                                             <tr>
+                                                                                <td rowspan="7"><img src="{{ $user->tempat_lahir }}" width="70px" alt=""></td>
                                                                                 <td>Nama</td>
                                                                                 <td>: {{ $user->name }}</td>
+                                                                                
                                                                             </tr>
                                                                             <tr>
                                                                                 <td>User Name</td>
@@ -62,9 +64,6 @@
                                                                                 <td>: {{ $user->email }}</td>
                                                                             </tr>
                                                                             <tr>
-                                                                                <td>Tempat Lahir</td>
-                                                                                <td><img src="{{ $user->tempat_lahir }}" width="70px" alt=""></td>
-                                                                            </tr>
                                                                             <tr>
                                                                                 <td>No Telpon</td>
                                                                                 <td>: {{ $user->no_telp }}</td>
@@ -91,7 +90,7 @@
                                                 </div>
                                                 <a href="#" class="btn btn-warning"
                                                     style="margin-right: 5px;"><i class="far fa-edit"></i></a>
-                                                <form method="POST" action="">
+                                                <form method="POST" action="{{ route('user.destroy', $user->id) }}">
                                                     @csrf
                                                     @method('DELETE')
                                                     <button type="submit" class="btn btn-danger" style="margin-right: 5px;"
