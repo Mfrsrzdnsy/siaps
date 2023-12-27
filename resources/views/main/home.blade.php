@@ -19,12 +19,6 @@
     </div>
   </div><br>
 
-  <div class="card bg-white border border-0"  style="font-size: 20px; color: #000000; --bs-bg-opacity: .5;">
-    <div class="card-body">
-      <h5 class="card-title"><i class="bi bi-lightbulb"></i>Informasi terkini</h5>
-      <p class="card-text"></p>
-    </div>
-  </div>
 @endsection
   
 <section style="background-image: url(./image/anak.jpg); background-size: cover; background-repeat: no-repeat; height: 800px;">
