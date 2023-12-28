@@ -72,7 +72,7 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item">
-                <img src="{{ asset('image/anak.jpg') }}" alt="First slide" class="d-block w-100" style="opacity: 0.7;">
+                <img src="{{ asset('image/anak.jpg') }}" alt="First slide" class="d-block w-100" style="opacity: 0.6;">
         
                 <div class="container mb-3">
                   <div class="carousel-caption text-start">
@@ -82,7 +82,7 @@
                 </div>
               </div>
               <div class="carousel-item active">
-                <img src="{{ asset('image/anak.jpg') }}" alt="Second slide" class="d-block w-100" style="opacity: 0.7;">
+                <img src="{{ asset('image/anak.jpg') }}" alt="Second slide" class="d-block w-100" style="opacity: 0.6;">
         
                 <div class="container">
                   <div class="carousel-caption">
@@ -93,7 +93,7 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="{{ asset('image/anak2.jpg') }}" alt="Third slide" class="d-block w-100" style="opacity: 0.7;">
+                <img src="{{ asset('image/anak2.jpg') }}" alt="Third slide" class="d-block w-100" style="opacity: 0.6;">
                 <div class="container">
                   <div class="carousel-caption text-end">
                     <h1>Keluar dari situasi sulit memerlukan dukungan.</h1>

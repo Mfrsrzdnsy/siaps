@@ -8,7 +8,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h6 class="card-title">Data Keluarga</h6>
-                        <div class="d-flex justify-content-end">
+                        <div class="d-flex justify-content-end mb-3">
                             <a href="{{ route('keluarga.create') }}" class="btn btn-primary ml-auto">Tambah Data</a>
                         </div>
                         <div class="table-responsive">

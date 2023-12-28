@@ -8,7 +8,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h6 class="card-title">Data user</h6>
-                        <div class="d-flex justify-content-end">
+                        <div class="d-flex justify-content-end mb-3">
                             <a href="{{ route('user.create') }}" class="btn btn-primary ml-auto">Tambah Data</a>
                         </div>
                         <div class="table-responsive">

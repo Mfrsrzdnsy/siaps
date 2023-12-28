@@ -46,7 +46,7 @@
                     <div class="container">
                       <div class="carousel-caption text-end">
                         <h1>Keluar dari situasi sulit memerlukan dukungan.</h1>
-                        <p>Temukan orang-orang yang percaya pada potensimu dan ingin membantu kamu mencapai kesuksesan.</p>
+                        <p>Temukan orang-orang yang percaya pada potensimu dan ingin membantu kamu mencapai kesuksesan.</p>
                       </div>
                     </div>
                   </div>
