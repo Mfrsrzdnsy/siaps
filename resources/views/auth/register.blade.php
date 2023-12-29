@@ -55,7 +55,7 @@
                 {{ __('Already registered?') }}
             </a>
             
-            <x-primary-button class="ms-4">
+            <x-primary-button class="ms-4 text-white">
                 {{ __('Register') }}
             </x-primary-button>
         </div>
