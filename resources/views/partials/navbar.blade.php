@@ -10,11 +10,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-size: 20px; color: #041227;">
         <ul class="navbar-nav">
           <li class="nav-item">
-<<<<<<< HEAD
-            <a class="nav-link {{ ($title === "home") ? 'active' : '' }}" href="/home"><i class="bi bi-house-door"></i>Home</a>
-=======
             <a class="nav-link {{ ($title === "home") ? 'active' : '' }}" href="/home"></i><i class="bi bi-house-door"></i>Home</a>
->>>>>>> 6df6bfb82270158bcfe8e74066d2ee361d463e75
           </li>
           <li class="nav-item">
             <a class="nav-link {{ ($title === "profil") ? 'active' : '' }}" href="/profil">Profil</a>
