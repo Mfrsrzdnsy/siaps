@@ -1,3 +1,12 @@
+@extends('layouts.home')
+
+@section('container')
+
+{{-- button untuk kembali ke halaman home--}}
+<div>
+    <a class="nav-link {{ ($title === "home") ? 'active' : '' }}" href="/home">
+        <button type="button" class="btn btn-light border border-0"><i class="bi bi-arrow-left"></i></button>
+    </div>
 <x-guest-layout>
     <form method="POST" action="{{ route('register') }}">
         @csrf
@@ -43,10 +52,13 @@
             <a class="underline text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800" href="{{ route('login') }}">
                 {{ __('Already registered?') }}
             </a>
-
-            <x-primary-button class="ms-4">
+            
+            <x-primary-button class="ms-4 text-white">
                 {{ __('Register') }}
             </x-primary-button>
         </div>
     </form>
 </x-guest-layout>
+
+@endsection
+<section style="background-image: url(./image/anak.jpg); background-size: cover; background-repeat: no-repeat; height: 800px;">

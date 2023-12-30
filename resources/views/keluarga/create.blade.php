@@ -7,18 +7,10 @@
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title">Form Tambah Data</h4>
-                        <form id="signupForm" method="POST" action="{{ route('siswa.store') }}" enctype="multipart/form-data">
+                        <form id="signupForm" method="POST" action="{{ route('keluarga.store')}}" enctype="multipart/form-data">
                             @csrf
 
                             <div class="row mb-3">
-                                <div class="col-md-6">
-                                    <label for="nis" class="form-label">NIS</label>
-                                    <input id="nis" class="form-control" name="nis" type="text">
-                                    @error('nis')
-                                        <span class="text-danger">{{ $message }}</span>
-                                    @enderror
-                                </div>
-
                                 <div class="col-md-6">
                                     <label for="nama" class="form-label">Nama</label>
                                     <input id="nama" class="form-control" name="nama" type="text">
@@ -27,40 +19,52 @@
 
                             <div class="row mb-3">
                                 <div class="col-md-6">
-                                    <label class="form-label">Jenis Kelamin </label>
-                                    <div class="form-check form-check-inline">
-                                        <input type="radio" class="form-check-input" name="jenis_kelamin" id="gender1"
-                                            value="laki-laki">
-                                        <label class="form-check-label" for="gender1">Laki-laki</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input type="radio" class="form-check-input" name="jenis_kelamin" id="gender2"
-                                            value="perempuan">
-                                        <label class="form-check-label" for="gender2">Perempuan</label>
-                                    </div>
+                                    <label for="nama_ayah" class="form-label">Nama Ayah</label>
+                                    <input id="nama_ayah" class="form-control" name="nama_ayah" type="text">
+                                    @error('nama_ayah')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
                                 </div>
 
                                 <div class="col-md-6">
-                                    <label for="tempat_lahir" class="form-label">Tempat Lahir</label>
-                                    <input id="tempat_lahir" class="form-control" name="tempat_lahir" type="text">
+                                    <label for="nama_ibu" class="form-label">Nama Ibu</label>
+                                    <input id="nama_ibu" class="form-control" name="nama_ibu" type="text">
+                                    @error('nama_ibu')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
                                 </div>
                             </div>
 
                             <div class="row mb-3">
                                 <div class="col-md-6">
-                                    <label for="tanggal_lahir" class="form-label">Tanggal Lahir</label>
-                                    <input id="tanggal_lahir" class="form-control mb-4 mb-md-0" name="tanggal_lahir"
-                                        type="date">
+                                    <label class="form-label">Jumlah Bersaudara</label>
+                                    <select name="jumlah_saudara" class="form-select" aria-label="Default select example" required>
+                                        <option value="">--- Pilih Jumlah Saudara ---</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                    </select>
                                 </div>
-                                <div class="col-md-6">
-                                    <label for="pendidikan_terakhir" class="form-label">Pendidikan Terakhir</label>
-                                    <input id="pendidikan_terakhir" class="form-control" name="pendidikan_terakhir" type="text">
-                                </div>
-                                
                             </div>
 
                             <div class="row mb-3">
-                                
+                                <div class="col-md-6">
+                                    <label for="pendidikan_ayah" class="form-label">Pendidikan Terakhir Ayah</label>
+                                    <input id="pendidikan_ayah" class="form-control" name="pendidikan_ayah" type="text">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="pendidikan_ibu" class="form-label">Pendidikan Terakhir Ibu</label>
+                                    <input id="pendidikan_ibu" class="form-control" name="pendidikan_ibu" type="text">
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
                                 <div class="col-md-6">
                                     <label for="defaultconfig-4" class="col-form-label">Alamat</label>
                                     <textarea id="maxlength-textarea" class="form-control" name="alamat" maxlength="100" rows="8"

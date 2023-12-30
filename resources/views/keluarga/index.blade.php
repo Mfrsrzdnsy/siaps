@@ -7,37 +7,33 @@
             <div class="col-md-12 grid-margin stretch-card">
                 <div class="card">
                     <div class="card-body">
-                        <h6 class="card-title">Data Anak</h6>
+                        <h6 class="card-title">Data Keluarga</h6>
                         <div class="d-flex justify-content-end mb-3">
-                            <a href="{{ route('siswa.create') }}" class="btn btn-primary ml-auto">Tambah Data</a>
-                            
-                            <a href="{{ url('/downloadpdf') }}" target="_blank" class="btn btn-info btn-md"> Download PDF</a>
+                            <a href="{{ route('keluarga.create') }}" class="btn btn-primary ml-auto">Tambah Data</a>
                         </div>
                         <div class="table-responsive">
                             <table id="dataTableExample" class="table">
                                 <thead>
                                     <tr>
-                                        <th>NIS</th>
                                         <th>Nama</th>
-                                        <th>Jenis Kelamin</th>
-                                        <th>Tempat Lahir</th>
-                                        <th>Tanggal Lahir</th>
+                                        <th>Nama Ayah</th>
+                                        <th>Nama Ibu</th>
+                                        <th>Alamat</th>
                                         <th>aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($siswas as $siswa)
+                                    @foreach ($keluargas as $keluarga)
                                         <tr>
-                                            <td>{{ $siswa->nis }}</td>
-                                            <td>{{ $siswa->nama }}</td>
-                                            <td>{{ $siswa->jenis_kelamin }}</td>
-                                            <td>{{ $siswa->tempat_lahir }}</td>
-                                            <td>{{ $siswa->tanggal_lahir }}</td>
+                                            <td>{{ $keluarga->nama }}</td>
+                                            <td>{{ $keluarga->nama_ayah }}</td>
+                                            <td>{{ $keluarga->nama_ibu }}</td>
+                                            <td>{{ $keluarga->alamat }}</td>
                                             <td style="display: flex">
                                                 <button type="button" class="btn btn-primary" style="margin-right: 5px;"
                                                     data-bs-toggle="modal"
-                                                    data-bs-target="#memberModal_{{ $siswa->id_siswa }}"><i class="far fa-eye"></i></button>
-                                                <div class="modal fade" id="memberModal_{{ $siswa->id_siswa }}"
+                                                    data-bs-target="#memberModal_{{ $keluarga->id_keluarga }}"><i class="far fa-eye"></i></button>
+                                                <div class="modal fade" id="memberModal_{{ $keluarga->id_keluarga }}"
                                                     tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                     <div class="modal-dialog modal-dialog-centered">
                                                         <div class="modal-content">
@@ -53,36 +49,36 @@
                                                                         <table class="table" border="0">
                                                                             <tr>
                                                                                 <td>Nama</td>
-                                                                                <td>: {{ $siswa->nama }}</td>
+                                                                                <td>: {{ $keluarga->nama }}</td>
                                                                             </tr>
                                                                             <tr>
-                                                                                <td>NIS</td>
-                                                                                <td>: {{ $siswa->nis }}</td>
+                                                                                <td>Nama Ayah</td>
+                                                                                <td>: {{ $keluarga->nama_ayah }}</td>
                                                                             </tr>
                                                                             <tr>
-                                                                                <td>Jenis Kelamin</td>
-                                                                                <td>: {{ $siswa->jenis_kelamin }}</td>
+                                                                            <tr>
+                                                                                <td>Nama Ibu</td>
+                                                                                <td>: {{ $keluarga->nama_ibu }}</td>
                                                                             </tr>
                                                                             <tr>
-                                                                                <td>Tempat Lahir</td>
-                                                                                <td>: {{ $siswa->tempat_lahir }}</td>
+                                                                                <td>Jumlah Saudara</td>
+                                                                                <td>: {{ $keluarga->jumlah_saudara }}</td>
                                                                             </tr>
                                                                             <tr>
-                                                                                <td>Tanggal Lahir</td>
-                                                                                <td>: {{ $siswa->tanggal_lahir }}</td>
+                                                                                <td>Pendidikan Terakhir Ayah</td>
+                                                                                <td>: {{ $keluarga->pendidikan_ayah }}</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Pendidikan Terakhir Ibu</td>
+                                                                                <td>: {{ $keluarga->pendidikan_ibu }}</td>
                                                                             </tr>
                                                                             <tr>
                                                                                 <td>Alamat</td>
-                                                                                <td>: {{ $siswa->alamat }}</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>Pendidikan</td>
-                                                                                <td>: {{ $siswa->pendidikan_terakhir }}
-                                                                                </td>
+                                                                                <td>: {{ $keluarga->alamat }}</td>
                                                                             </tr>
                                                                             <tr>
                                                                                 <td>Deskripsi</td>
-                                                                                <td>: {{ $siswa->deskripsi }}</td>
+                                                                                <td>: {{ $keluarga->deskripsi }}</td>
                                                                             </tr>
                                                                         </table>
                                                                     </div>
@@ -95,9 +91,9 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <a href="{{ route('siswa.edit', $siswa->id_siswa) }}" class="btn btn-warning"
+                                                <a href="{{ route('keluarga.edit', $keluarga->id_keluarga) }}" class="btn btn-warning"
                                                     style="margin-right: 5px;"><i class="far fa-edit"></i></a>
-                                                <form method="POST" action="{{ route('siswa.destroy', $siswa->id_siswa) }}">
+                                                <form method="POST" action="{{ route('keluarga.destroy', $keluarga->id_keluarga) }}">
                                                     @csrf
                                                     @method('DELETE')
                                                     <button type="submit" class="btn btn-danger" style="margin-right: 5px;"

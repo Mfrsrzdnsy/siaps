@@ -56,7 +56,7 @@
 
                             <h6 class="card-title">Update Admin Profile </h6>
 
-                            <form class="forms-sample">
+                            <form method="POST" class="forms-sample">
                                 <div class="mb-3">
                                     <label for="exampleInputUsername1" class="form-label">Username</label>
                                     <input type="text" name="username" class="form-control" id="exampleInputUsername1"

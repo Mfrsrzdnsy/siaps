@@ -15,6 +15,7 @@
     {{-- Font Awesome --}}
     <link rel="stylesheet" href="{{ asset('assets/css/all.min.css') }}">
     {{-- Font Awesome --}}
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,6 +28,12 @@
 
     <!-- Plugin css for this page -->
     <link rel="stylesheet" href="{{ asset('../assets/vendors/flatpickr/flatpickr.min.css') }}">
+    <link
+    rel="stylesheet"
+    href="{{ asset('../../../assets/vendors/datatables.net-bs5/dataTables.bootstrap5.css') }}"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css">
     <!-- End plugin css for this page -->
 
     <!-- inject:css -->
@@ -72,6 +79,14 @@
     <!-- endinject -->
 
     <!-- Plugin js for this page -->
+        {{-- data table --}}
+    <script src="{{ asset('../../../assets/vendors/datatables.net-bs5/dataTables.bootstrap5.js') }}"></script>
+    <script src="{{ asset('../../../assets/vendors/datatables.net/jquery.dataTables.js') }}"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js"></script>
+        {{-- end data table --}}
+
     <script src="{{ asset('../assets/vendors/flatpickr/flatpickr.min.js') }}"></script>
     <script src="{{ asset('../assets/vendors/apexcharts/apexcharts.min.js') }}"></script>
     <script src="{{ asset('../../../assets/vendors/jquery-validation/jquery.validate.min.js') }}"></script>
@@ -102,6 +117,7 @@
 	<script src="{{ asset('../../../assets/js/dropzone.js') }}"></script>
 	<script src="{{ asset('../../../assets/js/dropify.js') }}"></script>
 	
+    <script src="{{ asset('../../../assets/js/data-table.js') }}"></script>
 	<script src="{{ asset('../../../assets/js/flatpickr.js') }}"></script>
     <!-- End custom js for this page -->
 

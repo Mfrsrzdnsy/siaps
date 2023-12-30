@@ -27,7 +27,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="pages/apps/calendar.html" class="nav-link">
+                <a href="/keluarga" class="nav-link">
                     <i class="link-icon" data-feather="table"></i>
                     <span class="link-title">Infromasi Keluarga</span>
                 </a>
@@ -41,11 +41,11 @@
             </a>
             <div class="collapse" id="emails">
               <ul class="nav sub-menu">
+                {{-- <li class="nav-item">
+                  <a href="/user/create" class="nav-link">Add User</a>
+                </li> --}}
                 <li class="nav-item">
-                  <a href="../../pages/email/inbox.html" class="nav-link">Add User</a>
-                </li>
-                <li class="nav-item">
-                  <a href="../../pages/email/read.html" class="nav-link">Data User</a>
+                  <a href="/user" class="nav-link">Data User</a>
                 </li>
               </ul>
             </div>

@@ -7,37 +7,35 @@
             <div class="col-md-12 grid-margin stretch-card">
                 <div class="card">
                     <div class="card-body">
-                        <h6 class="card-title">Data Anak</h6>
+                        <h6 class="card-title">Data user</h6>
                         <div class="d-flex justify-content-end mb-3">
-                            <a href="{{ route('siswa.create') }}" class="btn btn-primary ml-auto">Tambah Data</a>
-                            
-                            <a href="{{ url('/downloadpdf') }}" target="_blank" class="btn btn-info btn-md"> Download PDF</a>
+                            <a href="{{ route('user.create') }}" class="btn btn-primary ml-auto">Tambah User</a>
                         </div>
                         <div class="table-responsive">
                             <table id="dataTableExample" class="table">
                                 <thead>
                                     <tr>
-                                        <th>NIS</th>
+                                        <th>Foto</th>
                                         <th>Nama</th>
-                                        <th>Jenis Kelamin</th>
-                                        <th>Tempat Lahir</th>
-                                        <th>Tanggal Lahir</th>
-                                        <th>aksi</th>
+                                        <th>User Name</th>
+                                        <th>Email</th>
+                                        <th>No Telpon</th>
+                                        <th>Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($siswas as $siswa)
+                                    @foreach ($users as $user)
                                         <tr>
-                                            <td>{{ $siswa->nis }}</td>
-                                            <td>{{ $siswa->nama }}</td>
-                                            <td>{{ $siswa->jenis_kelamin }}</td>
-                                            <td>{{ $siswa->tempat_lahir }}</td>
-                                            <td>{{ $siswa->tanggal_lahir }}</td>
+                                            <td><img src="{{ $user->tempat_lahir }}" width="70px" alt=""></td>
+                                            <td>{{ $user->name }}</td>
+                                            <td>{{ $user->username }}</td>
+                                            <td>{{ $user->email }}</td>
+                                            <td>{{ $user->no_telp }}</td>
                                             <td style="display: flex">
                                                 <button type="button" class="btn btn-primary" style="margin-right: 5px;"
                                                     data-bs-toggle="modal"
-                                                    data-bs-target="#memberModal_{{ $siswa->id_siswa }}"><i class="far fa-eye"></i></button>
-                                                <div class="modal fade" id="memberModal_{{ $siswa->id_siswa }}"
+                                                    data-bs-target="#memberModal_{{ $user->id }}"><i class="far fa-eye"></i></button>
+                                                <div class="modal fade" id="memberModal_{{ $user->id }}"
                                                     tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                     <div class="modal-dialog modal-dialog-centered">
                                                         <div class="modal-content">
@@ -52,37 +50,32 @@
                                                                     <div class="card-body">
                                                                         <table class="table" border="0">
                                                                             <tr>
+                                                                                <td rowspan="7"><img src="{{ $user->tempat_lahir }}" width="70px" alt=""></td>
                                                                                 <td>Nama</td>
-                                                                                <td>: {{ $siswa->nama }}</td>
+                                                                                <td>: {{ $user->name }}</td>
+                                                                                
                                                                             </tr>
                                                                             <tr>
-                                                                                <td>NIS</td>
-                                                                                <td>: {{ $siswa->nis }}</td>
+                                                                                <td>User Name</td>
+                                                                                <td>: {{ $user->username }}</td>
                                                                             </tr>
                                                                             <tr>
-                                                                                <td>Jenis Kelamin</td>
-                                                                                <td>: {{ $siswa->jenis_kelamin }}</td>
+                                                                                <td>Email</td>
+                                                                                <td>: {{ $user->email }}</td>
                                                                             </tr>
                                                                             <tr>
-                                                                                <td>Tempat Lahir</td>
-                                                                                <td>: {{ $siswa->tempat_lahir }}</td>
-                                                                            </tr>
                                                                             <tr>
-                                                                                <td>Tanggal Lahir</td>
-                                                                                <td>: {{ $siswa->tanggal_lahir }}</td>
+                                                                                <td>No Telpon</td>
+                                                                                <td>: {{ $user->no_telp }}</td>
                                                                             </tr>
                                                                             <tr>
                                                                                 <td>Alamat</td>
-                                                                                <td>: {{ $siswa->alamat }}</td>
+                                                                                <td>: {{ $user->alamat }}</td>
                                                                             </tr>
                                                                             <tr>
-                                                                                <td>Pendidikan</td>
-                                                                                <td>: {{ $siswa->pendidikan_terakhir }}
+                                                                                <td>Role</td>
+                                                                                <td>: {{ $user->role }}
                                                                                 </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>Deskripsi</td>
-                                                                                <td>: {{ $siswa->deskripsi }}</td>
                                                                             </tr>
                                                                         </table>
                                                                     </div>
@@ -95,9 +88,9 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <a href="{{ route('siswa.edit', $siswa->id_siswa) }}" class="btn btn-warning"
+                                                <a href="#" class="btn btn-warning"
                                                     style="margin-right: 5px;"><i class="far fa-edit"></i></a>
-                                                <form method="POST" action="{{ route('siswa.destroy', $siswa->id_siswa) }}">
+                                                <form method="POST" action="{{ route('user.destroy', $user->id) }}">
                                                     @csrf
                                                     @method('DELETE')
                                                     <button type="submit" class="btn btn-danger" style="margin-right: 5px;"
