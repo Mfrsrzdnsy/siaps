@@ -4,7 +4,7 @@
 @section('container')
 
 <div class="card">
-    <div class="card-body">
+    <div class="card-body border border-0">
       <h3 class="text-center"><i class="bi bi-telephone"></i> Hubungi kami</h3>
       <h5 class="text-center"><i class="bi bi-phone"></i> telp. 08*********</h5>
       <h5 class="text-center"><i class="bi bi-envelope-at"></i> Email: Siaps@gmail.co.id</h5>

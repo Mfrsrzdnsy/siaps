@@ -2,6 +2,7 @@
 
 use App\Http\Middleware\Role;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Routing\RouteFileRegistrar;
 use App\Http\Controllers\AgenController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\SiswaController;
@@ -9,6 +10,7 @@ use App\Http\Controllers\UtamaController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\Auth\RegisteredUserController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\KeluargaController;
 use App\Http\Controllers\UserController;
 
@@ -23,8 +25,8 @@ use App\Http\Controllers\UserController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/home', function () {
+    return view('utama.home');
 });
 
 Route::get('/dashboard', function () {
@@ -73,6 +75,7 @@ Route::resource('keluarga', KeluargaController::class);
 Route::resource('user', UserController::class);
 //end routes
 
+Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 
 // halaman utama
