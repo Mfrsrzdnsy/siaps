@@ -12,14 +12,6 @@
   </div>
 </div><br>
 
-<<<<<<< HEAD
-<div class="card bg-white border border-0"  style="font-size: 20px; color: #000000; --bs-bg-opacity: .5;">
-  <div class="card-body">
-    <h5 class="card-title"><i class="bi bi-lightbulb"></i>Informasi terkini</h5>
-    <p class="card-text">Jumlah anak putus sekolah jenjang Sekolah Dasar (SD) tahun 2022/2023 berjumlah 40.623 anak, yang mengalami peningkatan dari tahun ajaran 2021/2022 yang berjumlah 38.716 anak (statistik.data.kemdikbud.go.id).</p>
-  </div>
-</div><br>
-=======
 <div class="page-content height: 200px">
   <main>
       <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -71,8 +63,6 @@
         </div>
   </main>
 </div>
-
->>>>>>> 6df6bfb82270158bcfe8e74066d2ee361d463e75
   
 @endsection
   
