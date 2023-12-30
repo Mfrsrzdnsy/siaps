@@ -36,7 +36,8 @@
             <div class="col-md-5 p-lg-5 mx-auto my-5">
                 <h1 class="display-4 fw-normal">Siaps</h1>
                 <p class="lead fw-normal">
-                    Kami berharap bahwa Sistem Informasi Anak Putus Sekolah ini dapat menjadi jembatan yang kuat untuk membantu mengatasi masalah putus sekolah. 
+                    Kami berharap bahwa Sistem Informasi Anak Putus Sekolah ini dapat menjadi 
+                    jembatan yang kuat untuk membantu mengatasi masalah putus sekolah. 
                 </p>
                 <a class="btn btn-outline-secondary" href="{{ url('/home') }}">Go to Home</a>
             </div>
