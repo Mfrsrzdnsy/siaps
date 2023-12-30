@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\SiswaModel;
 use Illuminate\Support\Facades\Log;
+use PDF;
+// use Barryvdh\DomPDF\Facade\Pdf;
 
 class SiswaController extends Controller
 {
@@ -86,4 +88,11 @@ class SiswaController extends Controller
 
 
     // Metode lainnya dengan penanganan kesalahan serupa...
+
+    public function downloadpdf()
+    {
+        $siswas = SiswaModel::all();
+        $pdf = PDF::loadview('laporan_siswa' , ['siswas'=> $siswas])->setOptions(['defaultFont' => 'sans-serif']);
+        return $pdf->download('laporan_siswa.pdf');
+    }
 }
