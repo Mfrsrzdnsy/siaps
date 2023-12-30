@@ -10,6 +10,8 @@
                         <h6 class="card-title">Data Anak</h6>
                         <div class="d-flex justify-content-end mb-3">
                             <a href="{{ route('siswa.create') }}" class="btn btn-primary ml-auto">Tambah Data</a>
+                            
+                            <a href="{{ url('/downloadpdf') }}" target="_blank" class="btn btn-info btn-md"> Download PDF</a>
                         </div>
                         <div class="table-responsive">
                             <table id="dataTableExample" class="table">

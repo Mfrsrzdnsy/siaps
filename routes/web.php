@@ -88,3 +88,6 @@ Route::get('/contact', [UtamaController::class, 'contact']);
 Route::get('/login_siaps', [AuthenticatedSessionController::class, 'login']);
 
 Route::get('/register_siaps', [RegisteredUserController::class, 'register']);
+
+
+Route::get('/downloadpdf', [SiswaController::class, 'downloadpdf']);
