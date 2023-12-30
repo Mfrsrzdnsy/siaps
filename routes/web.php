@@ -13,7 +13,6 @@ use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\KeluargaController;
 use App\Http\Controllers\UserController;
-use App\Http\Controllers\VuserController;
 
 /*
 |--------------------------------------------------------------------------
