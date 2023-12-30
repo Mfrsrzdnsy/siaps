@@ -35,8 +35,4 @@ class AdminController extends Controller
         return view('admin.profile_view', compact('profileData'));
         
     }
-
-    public function AdminProfileStore(Request $request){
-        
-    }
 }

@@ -13,6 +13,7 @@ use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\KeluargaController;
 use App\Http\Controllers\UserController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,9 +25,8 @@ use App\Http\Controllers\UserController;
 |
 */
 
-
 Route::get('/home', function () {
-    return view('welcome');
+    return view('utama.home');
 });
 
 Route::get('/dashboard', function () {
@@ -53,8 +53,6 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
     Route::get('/admin/logout', [AdminController::class, 'AdminLogout'])->name('admin.logout');
 
     Route::get('/admin/profil', [AdminController::class, 'AdminProfile'])->name('admin.profile');
-
-    Route::post('/admin/profil/store', [AdminController::class, 'AdminProfileStore'])->name('admin.profil.store');
 }); //end group admin middleware
 
 //group middleware user
