@@ -72,7 +72,11 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item">
+<<<<<<< HEAD
                 <img src="{{ asset('image/anak.jpg') }}" alt="First slide" class="d-block w-100" style="opacity: 0.6;">
+=======
+                <img src="{{ asset('image/anak3.jpeg') }}" alt="First slide" class="d-block w-100" style="opacity: 0.7;">
+>>>>>>> 6df6bfb82270158bcfe8e74066d2ee361d463e75
         
                 <div class="container mb-3">
                   <div class="carousel-caption text-start">

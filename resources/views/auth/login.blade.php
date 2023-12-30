@@ -2,6 +2,13 @@
 
 @section('container')
 
+{{-- button untuk kembali ke halaman home--}}
+<div>
+    <a class="nav-link {{ ($title === "home") ? 'active' : '' }}" href="/home">
+        <button type="button" class="btn btn-light border border-0"><i class="bi bi-arrow-left"></i></button>
+    </div>
+    
+
 <x-guest-layout>
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
@@ -44,7 +51,7 @@
                 </a>
             @endif
 
-            <x-primary-button class="ms-3">
+            <x-primary-button class="ms-3 text-white">
                 {{ __('Log in') }}
             </x-primary-button>
         </div>

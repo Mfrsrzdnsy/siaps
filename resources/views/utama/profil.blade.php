@@ -2,7 +2,7 @@
 
 @section('container')
 
-<div class="card">
+<div class="card border border-0">
     <div class="card-body">
       <h3 class="text-center">Sistem Informasi Anak Putus Sekolah</h3>
       <p> Jumlah Anak putus sekolah adalah salah satu permasalah yang dapat menghambat
