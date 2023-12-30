@@ -186,11 +186,7 @@ return [
     'aliases' => [
         // ...
         'PDF' => Barryvdh\DomPDF\Facade\Pdf::class,
-<<<<<<< HEAD
-        'Route'     => "Illuminate\Support\Facades\Route"
-=======
         'Route'     => "Illuminate\Support\Facades\Route",
->>>>>>> d1d3effe6effae3775bd79bcfc9a73e929209506
     ],    
 
 ];
