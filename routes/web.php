@@ -13,6 +13,7 @@ use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\KeluargaController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\VuserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -50,11 +51,12 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
         'AdminDashboard'
     ])->name('admin.dashboard');
 
-    Route::get('/admin/logout', [AdminController::class,'AdminLogout'])->name('admin.logout');
-    
+    Route::get('/admin/logout', [AdminController::class, 'AdminLogout'])->name('admin.logout');
+
     Route::get('/admin/profil', [AdminController::class, 'AdminProfile'])->name('admin.profile');
 }); //end group admin middleware
 
+//group middleware user
 
 //group agen middleware
 Route::middleware(['auth', 'role:agen'])->group(function () {
