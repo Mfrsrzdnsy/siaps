@@ -25,7 +25,7 @@
               <div class="container mb-3">
                 <div class="card bg-white border border-0" style="font-size: 20px; color: #000000; --bs-bg-opacity: .5;">
                   <div class="card-body">
-                    <h5 class="card-title"><i class="bi bi-megaphone-fill"></i></i></i> Sekilas Info</h5>
+                    <h5 class="card-title"><i class="bi bi-megaphone-fill"></i> Sekilas Info</h5>
                     <p class="text-md-center">Faktor ekonomi, menjadi salah satu penyebab tingginya tingkat putus sekolah di Indonesia. Jarak tempuh yang jauh antara rumah dan sekolah dan ditempuh dengan berjalan kaki yang cukup jauh, membuat anak-anak yang tinggal di pelosok pedesaaan, perbukitan, menjadi kendala terbesar karena kurangnya akses mereka untuk berangkat ke sekolah.</p>
                   </div>
                 </div>
