@@ -12,9 +12,10 @@
                         <div class="d-flex align-items-center justify-content-between mb-2">
                             <div>
 
-                                <img class="wd-100 rounded-circle" src="{{ (!empty($profileData->foto)) ? 
-                                url('upload/admin_images'.$profileData->foto) : url('upload/no_image.jpg') }}" alt="profile" />
-                                <span class="h4 ms-3">{{ $profileData->username}}</span>
+                                <img class="wd-100 rounded-circle"
+                                    src="{{ !empty($profileData->foto) ? url('upload/admin_images/' . $profileData->foto) : url('upload/no_image.jpg') }}"
+                                    alt="profile" />
+                                <span class="h4 ms-3">{{ $profileData->username }}</span>
                             </div>
                         </div>
                         <div class="mt-3">
@@ -56,7 +57,9 @@
 
                             <h6 class="card-title">Update Admin Profile </h6>
 
-                            <form method="POST" class="forms-sample">
+                            <form method="POST" action="{{ route('admin.profile.store')}}" class="forms-sample" enctype="multipart/form-data">
+                                @csrf
+
                                 <div class="mb-3">
                                     <label for="exampleInputUsername1" class="form-label">Username</label>
                                     <input type="text" name="username" class="form-control" id="exampleInputUsername1"
@@ -75,12 +78,12 @@
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label">No Telpon</label>
                                     <input type="text" name="no_telp" class="form-control" id="exampleInputUsername1"
-                                        autocomplete="off" placeholder="Username" value="{{ $profileData->no_telp}}">
+                                        autocomplete="off" placeholder="no telpon" value="{{ $profileData->no_telp }}">
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label">Alamat</label>
                                     <input type="text" name="alamat" class="form-control" id="exampleInputUsername1"
-                                        autocomplete="off" placeholder="Username" value="{{ $profileData->alamat}}">
+                                        autocomplete="off" placeholder="alamat" value="{{ $profileData->alamat }}">
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label">Foto</label>
@@ -88,8 +91,9 @@
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label"></label>
-                                    <img id="showImage" class="wd-80 rounded-circle" src="{{ (!empty($profileData->foto)) ? 
-                                        url('upload/admin_images'.$profileData->foto) : url('upload/no_image.jpg') }}" alt="profile" />
+                                    <img id="showImage" class="wd-80 rounded-circle"
+                                        src="{{ !empty($profileData->foto) ? url('upload/admin_images/' . $profileData->foto) : url('upload/no_image.jpg') }}"
+                                        alt="profile" />
                                 </div>
                                 <button type="submit" class="btn btn-primary me-2">Simpan Perubahan</button>
                                 

@@ -13,7 +13,7 @@ class KeluargaController extends Controller
         return view('keluarga.index', compact('keluargas'));
     }
 
-    
+
     public function create()
     {
         return view('keluarga.create');
@@ -44,7 +44,7 @@ class KeluargaController extends Controller
                 'deskripsi' =>  $request->deskripsi,
             ]);
 
-            return redirect()->route('keluarga.index')->with('success', 'Data keluarga berhasil ditambahkan.');
+            return redirect()->route('keluarga.index')->with('success', 'Data Keluarga Berhasil Ditambahkan !!!');
     }
 
     public function edit(string $id)
@@ -71,7 +71,7 @@ class KeluargaController extends Controller
 
         ]);
 
-        return redirect()->route('keluarga.index');
+        return redirect()->route('keluarga.index')->with('success', 'Data Keluarga Berhasil Diupdate !!!');
     }
 
     /**
@@ -81,9 +81,9 @@ class KeluargaController extends Controller
     {
         KeluargaModel::findOrFail($id)->delete();
 
-        return redirect()->route('keluarga.index');
-    } 
-    
+        return redirect()->route('keluarga.index')->with('success', 'Data Keluarga Berhasil Dihapus !!!');
+    }
+
 
     // Metode lainnya dengan penanganan kesalahan serupa...
 }

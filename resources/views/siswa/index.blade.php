@@ -9,9 +9,9 @@
                     <div class="card-body">
                         <h6 class="card-title">Data Anak</h6>
                         <div class="d-flex justify-content-end mb-3">
-                            <a href="{{ route('siswa.create') }}" class="btn btn-primary ml-auto">Tambah Data</a>
-                            
-                            <a href="{{ url('/downloadpdf') }}" target="_blank" class="btn btn-info btn-md"> Download PDF</a>
+                            <a href="{{ route('siswa.create') }}" class="btn btn-primary ml-auto me-2">Tambah Data</a>
+
+                            <a href="{{ url('/downloadpdf') }}" target="_blank" class="btn btn-info btn-md"><i class="fa-solid fa-download"></i> PDF</a>
                         </div>
                         <div class="table-responsive">
                             <table id="dataTableExample" class="table">
@@ -97,12 +97,14 @@
                                                 </div>
                                                 <a href="{{ route('siswa.edit', $siswa->id_siswa) }}" class="btn btn-warning"
                                                     style="margin-right: 5px;"><i class="far fa-edit"></i></a>
-                                                <form method="POST" action="{{ route('siswa.destroy', $siswa->id_siswa) }}">
-                                                    @csrf
-                                                    @method('DELETE')
-                                                    <button type="submit" class="btn btn-danger" style="margin-right: 5px;"
-                                                        onclick="return confirm('Apakah Anda yakin ingin menghapus member ini?')"><i class="fas fa-trash-alt"></i></button>
-                                                </form>
+                                                    <form id="deleteForm{{ $siswa->id_siswa }}" method="POST" action="{{ route('siswa.destroy', $siswa->id_siswa) }}">
+                                                        @csrf
+                                                        @method('DELETE')
+
+                                                        <button type="button" class="btn btn-danger" style="margin-right: 5px;" onclick="confirmDelete('{{ $siswa->id_siswa }}')">
+                                                            <i class="fas fa-trash-alt"></i>
+                                                        </button>
+                                                    </form>
                                             </td>
                                         </tr>
                                     @endforeach
@@ -114,4 +116,35 @@
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        @if(session('success'))
+            Swal.fire({
+                icon: 'success',
+                title: 'Success!',
+                text: '{{ session('success') }}',
+                showConfirmButton: false,
+                timer: 1500
+            });
+        @endif
+    </script>
+
+<script>
+    function confirmDelete(siswaId) {
+        Swal.fire({
+            title: 'Apakah Anda yakin ingin menghapus data anak ini?',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#d33',
+            cancelButtonColor: '#3085d6',
+            confirmButtonText: 'Ya, Hapus!',
+            cancelButtonText: 'Batal'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // If user clicks "Ya, Hapus!", submit the form
+                document.getElementById('deleteForm' + siswaId).submit();
+            }
+        });
+    }
+</script>
 @endsection

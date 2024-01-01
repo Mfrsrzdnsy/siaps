@@ -49,18 +49,35 @@
                             <div class="row mb-3">
                                 <div class="col-md-6">
                                     <label for="tanggal_lahir" class="form-label">Tanggal Lahir</label>
-                                    <input id="tanggal_lahir" class="form-control mb-4 mb-md-0" name="tanggal_lahir"
-                                        type="date">
+                                        <div class="input-group flatpickr" id="flatpickr-date">
+                                            <input type="text" id="tanggal_lahir" name="tanggal_lahir" class="form-control flatpickr-input"
+                                                placeholder="Select date" data-input="" readonly="readonly">
+                                            <span class="input-group-text input-group-addon" data-toggle=""><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="feather feather-calendar">
+                                                    <rect x="3" y="4" width="18" height="18" rx="2"
+                                                        ry="2"></rect>
+                                                    <line x1="16" y1="2" x2="16"
+                                                        y2="6"></line>
+                                                    <line x1="8" y1="2" x2="8"
+                                                        y2="6"></line>
+                                                    <line x1="3" y1="10" x2="21"
+                                                        y2="10"></line>
+                                                </svg></span>
+                                        </div>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="pendidikan_terakhir" class="form-label">Pendidikan Terakhir</label>
-                                    <input id="pendidikan_terakhir" class="form-control" name="pendidikan_terakhir" type="text">
+                                    <input id="pendidikan_terakhir" class="form-control" name="pendidikan_terakhir"
+                                        type="text">
                                 </div>
-                                
+
                             </div>
 
                             <div class="row mb-3">
-                                
+
                                 <div class="col-md-6">
                                     <label for="defaultconfig-4" class="col-form-label">Alamat</label>
                                     <textarea id="maxlength-textarea" class="form-control" name="alamat" maxlength="100" rows="8"
