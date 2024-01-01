@@ -88,9 +88,9 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <a href="#" class="btn btn-warning"
+                                                <a href="{{ route('user.edit', $user->id) }}" class="btn btn-warning"
                                                     style="margin-right: 5px;"><i class="far fa-edit"></i></a>
-                                                <form method="POST" action="{{ route('user.destroy', $user->id) }}">
+                                                <form method="POST" action="{{ route('siswa.destroy', $user->id) }}">
                                                     @csrf
                                                     @method('DELETE')
                                                     <button type="submit" class="btn btn-danger" style="margin-right: 5px;"

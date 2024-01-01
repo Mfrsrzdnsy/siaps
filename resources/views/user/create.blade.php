@@ -31,10 +31,18 @@
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
+                            <div class="row mb-3">
                                 <div class="col-md-6">
-                                    <label for="email" class="form-label">No Telpon</label>
-                                    <input id="email" class="form-control" name="email" type="email">
-                                    @error('email')
+                                    <label for="password" class="form-label">Password</label>
+                                    <input id="password" class="form-control" name="password" type="password">
+                                    @error('password')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="no_telp" class="form-label">No Telpon</label>
+                                    <input id="no_telp" class="form-control" name="no_telp" type="text">
+                                    @error('no_telp')
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
