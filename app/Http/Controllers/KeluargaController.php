@@ -13,7 +13,7 @@ class KeluargaController extends Controller
         return view('keluarga.index', compact('keluargas'));
     }
 
-    
+
     public function create()
     {
         return view('keluarga.create');
@@ -82,8 +82,8 @@ class KeluargaController extends Controller
         KeluargaModel::findOrFail($id)->delete();
 
         return redirect()->route('keluarga.index');
-    } 
-    
+    }
+
 
     // Metode lainnya dengan penanganan kesalahan serupa...
 }
