@@ -17,8 +17,8 @@ class UserModel extends Model
         'email',
         'password',
         'foto',
-        'no_telp',
         'alamat',
+        'no_telp',
         'role',
     ];
 

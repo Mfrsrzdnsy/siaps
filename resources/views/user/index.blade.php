@@ -88,7 +88,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <a href="#" class="btn btn-warning"
+                                                <a href="{{ route('user.edit', $user->id) }}" class="btn btn-warning"
                                                     style="margin-right: 5px;"><i class="far fa-edit"></i></a>
                                                 <form method="POST" action="{{ route('user.destroy', $user->id) }}">
                                                     @csrf

@@ -1,6 +1,7 @@
 @extends('admin.admin_dashboard')
 @section('content')
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <div class="page-content">
         <div class="row profile-body">
@@ -19,19 +20,19 @@
                         </div>
                         <div class="mt-3">
                             <label class="tx-11 fw-bolder mb-0 text-uppercase">Nama :</label>
-                            <p class="text-muted">{{ $profileData->name }}</p>
+                            <p class="text-muted">{{ $profileData->name}}</p>
                         </div>
                         <div class="mt-3">
                             <label class="tx-11 fw-bolder mb-0 text-uppercase">Email :</label>
-                            <p class="text-muted">{{ $profileData->email }}</p>
+                            <p class="text-muted">{{ $profileData->email}}</p>
                         </div>
                         <div class="mt-3">
                             <label class="tx-11 fw-bolder mb-0 text-uppercase">No Telpon :</label>
-                            <p class="text-muted">{{ $profileData->no_telp }}</p>
+                            <p class="text-muted">{{ $profileData->no_telp}}</p>
                         </div>
                         <div class="mt-3">
                             <label class="tx-11 fw-bolder mb-0 text-uppercase">Alamat :</label>
-                            <p class="text-muted">{{ $profileData->alamat }}</p>
+                            <p class="text-muted">{{ $profileData->alamat}}</p>
                         </div>
                         <div class="mt-3 d-flex social-links">
                             <a href="javascript:;" class="btn btn-icon border btn-xs me-2">
@@ -62,17 +63,17 @@
                                 <div class="mb-3">
                                     <label for="exampleInputUsername1" class="form-label">Username</label>
                                     <input type="text" name="username" class="form-control" id="exampleInputUsername1"
-                                        autocomplete="off" placeholder="Username" value="{{ $profileData->username }}">
+                                        autocomplete="off" placeholder="Username" value="{{ $profileData->username}}">
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label">Nama</label>
                                     <input type="text" name="name" class="form-control" id="exampleInputUsername1"
-                                        autocomplete="off" placeholder="Username" value="{{ $profileData->name }}">
+                                        autocomplete="off" placeholder="Username" value="{{ $profileData->name}}">
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleInputPassword1" class="form-label">Email</label>
                                     <input type="email" name="email" class="form-control" id="exampleInputUsername1"
-                                        autocomplete="off" placeholder="Username" value="{{ $profileData->email }}">
+                                        autocomplete="off" placeholder="Username" value="{{ $profileData->email}}">
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label">No Telpon</label>
@@ -95,7 +96,7 @@
                                         alt="profile" />
                                 </div>
                                 <button type="submit" class="btn btn-primary me-2">Simpan Perubahan</button>
-
+                                
                             </form>
 
                         </div>
@@ -111,15 +112,19 @@
 
 
 
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#image').change(function(e) {
-                var reader = new FileReader();
-                reader.onload = function(e) {
-                    $('#showImage').attr('src', e.target.result);
-                }
-                reader.readAsDataURL(e.target.files['0']);
-            });
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#image').change(function(e){
+            var reader = new FileReader();
+            reader.onload = function(e){
+                $('#showImage').attr('src',e.target.result);
+            }
+            reader.readAsDataURL(e.target.files['0']);
         });
-    </script>
+    });
+
+</script>
+
+
+
 @endsection
