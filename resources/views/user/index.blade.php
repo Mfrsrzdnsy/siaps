@@ -52,7 +52,7 @@
                                                                             <tr>
                                                                                 <td rowspan="7"><img src="{{ $user->foto }}" width="70px" alt=""></td>
                                                                                 <td>Nama</td>
-                                                                                <td>: {{ $user->name }}</td>
+                                                                                <td>: {{ $user->nama }}</td>
 
                                                                             </tr>
                                                                             <tr>
