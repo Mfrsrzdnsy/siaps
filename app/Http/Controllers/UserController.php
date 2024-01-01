@@ -30,7 +30,7 @@ class UserController extends Controller
             'foto' => 'required|string|max:50',
             'alamat' => 'required|string',
             'no_telp' => 'required|string|max:20',
-            'role' => 'required|required|in:admin,user',
+            'role' => 'required|required|in:admin,user,agen',
         ]);
 
         UserModel::insert([

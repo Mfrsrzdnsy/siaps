@@ -51,7 +51,7 @@
                             <div class="row mb-3">
                                 <div class="col-md-6">
                                     <label class="form-label">Role</label>
-                                    <select name="jumlah_saudara" class="form-select" aria-label="Default select example" required>
+                                    <select name="role" class="form-select" aria-label="Default select example" required>
                                         <option value="">--- Pilih Role ---</option>
                                         <option value="admin">Admin</option>
                                         <option value="user">User</option>
