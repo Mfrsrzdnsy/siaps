@@ -35,7 +35,7 @@
               <div class="container">
                 <div class="card bg-white border border-0" style="font-size: 20px; color: #000000; --bs-bg-opacity: .5;">
                   <div class="card-body">
-                    <h5 class="card-title"><i class="bi bi-megaphone-fill"></i></i></i> Sekilas Info</h5>
+                    <h5 class="card-title"><i class="bi bi-megaphone-fill"></i> Sekilas Info</h5>
                     <p class="text-md-center">Tahun 2023 anggaran pendidikan mengalami kenaikan dari tahun sebelumnya. Anggaran pendidikan tahun 2023 sebesar 612,2 triliun meningkat dari tahun 2022 sebesar 574,9 triliun. Ironisnya, kenaikan anggaran pendidikan sejalan dengan bertambahnya jumlah anak putus sekolah di Indonesia pada tingkat SD, SMA dan SMK.</p>
                   </div>
                 </div>
@@ -45,7 +45,7 @@
               <div class="container">
                 <div class="card bg-white border border-0"  style="font-size: 20px; color: #000000; --bs-bg-opacity: .5;">
                   <div class="card-body">
-                    <h5 class="card-title"><i class="bi bi-megaphone-fill"></i></i> Sekilas Info</h5>
+                    <h5 class="card-title"><i class="bi bi-megaphone-fill"></i> Sekilas Info</h5>
                     <p class="text-md-center">Jumlah anak putus sekolah jenjang Sekolah Dasar (SD) tahun 2022/2023 berjumlah 40.623 anak, yang mengalami peningkatan dari tahun ajaran 2021/2022 yang berjumlah 38.716 anak. Anak putus sekolah jenjang SMP tahun ajaran 2022/2023 berjumlah 13.716 anak, mengalami penurun dari tahun ajaran 2021/2022 yang berjumlah 15.042 anak. Sedangkan anak putus sekolah tingkat SMA tahun ajaran 2022/2023 berjumlah 10.091 anak, mengalami peningkatan dari tahun ajaran 2021/2022 yang berjumlah 10.055 anak dan di tingkat SMK jumlah anak putus sekolah tahun 2022/2023 berjumlah 12.404 anak, yang mengalami peningkatan dari tahun ajaran 2021/2022 yang berjumlah 12.063 anak (statistik.data.kemdikbud.go.id).</p>
                   </div>
                 </div>

@@ -2,15 +2,19 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\SiswaModel;
 use App\Models\User;
+use App\Models\UserModel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class AdminController extends Controller
 {
     public function AdminDashboard(){
-        
-        return view('admin.index');
+        $totalSiswa = SiswaModel::count();
+        $totalUser = UserModel::count();
+
+        return view('admin.index', compact('totalSiswa', 'totalUser'));
     }
 
     public function AdminLogout(Request $request)
