@@ -9,7 +9,8 @@
     <meta name="author" content="NobleUI">
     <meta name="keywords"
         content="nobleui, bootstrap, bootstrap 5, bootstrap5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
-
+     {{-- bootstrap icon --}}
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <title>Panel Admin</title>
 
     {{-- Font Awesome --}}
@@ -34,6 +35,8 @@
   />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" >
     <!-- End plugin css for this page -->
 
     <!-- inject:css -->
@@ -116,10 +119,36 @@
 	<script src="{{ asset('../../../assets/js/tags-input.js') }}"></script>
 	<script src="{{ asset('../../../assets/js/dropzone.js') }}"></script>
 	<script src="{{ asset('../../../assets/js/dropify.js') }}"></script>
-	
+
     <script src="{{ asset('../../../assets/js/data-table.js') }}"></script>
 	<script src="{{ asset('../../../assets/js/flatpickr.js') }}"></script>
     <!-- End custom js for this page -->
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+<script>
+@if(session()->has('message'))
+    var type = "{{ session('alert-type', 'info') }}";
+    switch(type){
+        case 'info':
+            toastr.info("{{ session('message') }}");
+            break;
+
+        case 'success':
+            toastr.success("{{ session('message') }}");
+            break;
+
+        case 'warning':
+            toastr.warning("{{ session('message') }}");
+            break;
+
+        case 'error':
+            toastr.error("{{ session('message') }}");
+            break;
+    }
+@endif
+</script>
+
 
 </body>
 

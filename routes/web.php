@@ -13,6 +13,7 @@ use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\KeluargaController;
 use App\Http\Controllers\UserController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -54,7 +55,12 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
 
     Route::get('/admin/profil', [AdminController::class, 'AdminProfile'])->name('admin.profile');
 
-    Route::post('/admin/profil/store', [AdminController::class, 'AdminProfileStore'])->name('admin.profil.store');
+    Route::post('/admin/profil/store', [AdminController::class, 'AdminProfileStore'])->name('admin.profile.store');
+
+    Route::get('/admin/change/password', [AdminController::class, 'AdminChangePassword'])->name('admin.change.password');
+
+    Route::post('/admin/update/password', [AdminController::class, 'AdminUpdatePassword'])->name('admin.update.password');
+
 }); //end group admin middleware
 
 //group middleware user

@@ -31,10 +31,18 @@
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
+                            <div class="row mb-3">
                                 <div class="col-md-6">
-                                    <label for="email" class="form-label">No Telpon</label>
-                                    <input id="email" class="form-control" name="email" type="email">
-                                    @error('email')
+                                    <label for="password" class="form-label">Password</label>
+                                    <input id="password" class="form-control" name="password" type="password">
+                                    @error('password')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="no_telp" class="form-label">No Telpon</label>
+                                    <input id="no_telp" class="form-control" name="no_telp" type="text">
+                                    @error('no_telp')
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
@@ -43,7 +51,7 @@
                             <div class="row mb-3">
                                 <div class="col-md-6">
                                     <label class="form-label">Role</label>
-                                    <select name="jumlah_saudara" class="form-select" aria-label="Default select example" required>
+                                    <select name="role" class="form-select" aria-label="Default select example" required>
                                         <option value="">--- Pilih Role ---</option>
                                         <option value="admin">Admin</option>
                                         <option value="user">User</option>
@@ -59,7 +67,7 @@
                             <div class="row mb-3">
                                 <div class="col-md-2">
                                     <label for="exampleInputEmail1" class="form-label"></label>
-                                    <img id="showImage" class="wd-80 rounded-circle" src="{{ (!empty($profileData->foto)) ? 
+                                    <img id="showImage" class="wd-80 rounded-circle" src="{{ (!empty($profileData->foto)) ?
                                         url('upload/admin_images'.$profileData->foto) : url('upload/no_image.jpg') }}" alt="profile" />
                                 </div>
                                 <div class="col-md-10">
@@ -90,5 +98,5 @@
                 reader.readAsDataURL(e.target.files['0']);
             });
         });
-    
+
     </script>

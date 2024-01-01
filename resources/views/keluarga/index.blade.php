@@ -93,12 +93,14 @@
                                                 </div>
                                                 <a href="{{ route('keluarga.edit', $keluarga->id_keluarga) }}" class="btn btn-warning"
                                                     style="margin-right: 5px;"><i class="far fa-edit"></i></a>
-                                                <form method="POST" action="{{ route('keluarga.destroy', $keluarga->id_keluarga) }}">
-                                                    @csrf
-                                                    @method('DELETE')
-                                                    <button type="submit" class="btn btn-danger" style="margin-right: 5px;"
-                                                        onclick="return confirm('Apakah Anda yakin ingin menghapus member ini?')"><i class="fas fa-trash-alt"></i></button>
-                                                </form>
+                                                    <form class="delete-form" data-id="{{ $keluarga->id_keluarga }}" method="POST" action="{{ route('keluarga.destroy', $keluarga->id_keluarga) }}">
+                                                        @csrf
+                                                        @method('DELETE')
+
+                                                        <button type="button" class="btn btn-danger" style="margin-right: 5px;">
+                                                            <i class="fas fa-trash-alt"></i>
+                                                        </button>
+                                                    </form>
                                             </td>
                                         </tr>
                                     @endforeach
@@ -110,4 +112,44 @@
             </div>
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        @if(session('success'))
+            Swal.fire({
+                icon: 'success',
+                title: 'Success!',
+                text: '{{ session('success') }}',
+                showConfirmButton: false,
+                timer: 1500
+            });
+        @endif
+    </script>
+
+<script>
+    document.querySelectorAll('.delete-form').forEach(form => {
+        const keluargaId = form.getAttribute('data-id');
+
+        form.querySelector('button').addEventListener('click', () => {
+            confirmDelete(keluargaId);
+        });
+    });
+
+    function confirmDelete(keluargaId) {
+        Swal.fire({
+            title: 'Apakah Anda yakin ingin menghapus keluarga ini?',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#d33',
+            cancelButtonColor: '#3085d6',
+            confirmButtonText: 'Ya, Hapus!',
+            cancelButtonText: 'Batal'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // If user clicks "Ya, Hapus!", submit the form
+                document.querySelector(`.delete-form[data-id="${keluargaId}"]`).submit();
+            }
+        });
+    }
+</script>
 @endsection

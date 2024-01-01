@@ -45,7 +45,7 @@ class SiswaController extends Controller
             'deskripsi' =>  $request->deskripsi,
         ]);
 
-        return redirect()->route('siswa.index')->with('success', 'Data siswa berhasil ditambahkan.');
+        return redirect()->route('siswa.index')->with('success', 'Data Anak Berhasil Ditambahkan !!!');
     }
 
     public function edit(string $id)
@@ -72,7 +72,7 @@ class SiswaController extends Controller
 
         ]);
 
-        return redirect()->route('siswa.index');
+        return redirect()->route('siswa.index')->with('success', 'Data Anak Berhasil Diupdate !!!');
     }
 
     /**
@@ -82,18 +82,19 @@ class SiswaController extends Controller
     {
         SiswaModel::findOrFail($id)->delete();
 
-        return redirect()->route('siswa.index');
+        return redirect()->route('siswa.index')->with('success', 'Data Anak Berhasil Dihapus !!!');
     }
 
 
     // Metode lainnya dengan penanganan kesalahan serupa...
 
     public function downloadpdf()
-    {  
+    {
         $siswas = SiswaModel::all();
 
         $pdf = PDF::loadView('laporan_siswa', ['siswas' => $siswas])->setOptions(['defaultFont' => 'sans-serif']);
-    
+
         return $pdf->download('laporan_siswa.pdf');
+
     }
 }
