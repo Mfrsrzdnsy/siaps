@@ -25,7 +25,7 @@ use App\Http\Controllers\UserController;
 */
 
 
-Route::get('/home', function () {
+Route::get('/', function () {
     return view('welcome');
 });
 
