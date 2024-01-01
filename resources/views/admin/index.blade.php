@@ -38,8 +38,9 @@
 
   <div class="card bg-black border border-"  style=" --bs-bg-opacity: .1;">
     <div class="card-body">
-      <p class="text-center" style="font-size: 20px; color: #ffffff;">Anak Putus Sekolah di Indonesia</p>
-      <p class="text-center" style="font-size: 15px; color: #ffffff;">Anak putus sekolah adalah murid yang tidak dapat menyelesaikan program belajar sebelum waktunya selesai atau murid yang tidak tamat menyelesaikan program belajarnya. Akibat yang disebabkan anak putus sekolah sangat banyak, diantaranya adalah meningkatnya jumlah pengangguran,tawuran dan kebut-kebutan dijalan raya, minum-minuman keras dan perkelahian dan akibat lainnya juga perasaan minder dan rendah diri karena kurangnya pengetahuan yang dimiliki. Jumlah anak putus sekolah di Indonesia cukup banyak, ini terlihat dari banyaknya anak usia sekolah yang mengemen, mengemis dijalanan pada jam-jam sekolah, bahkan ada yang menjadi pemulung dan lebih memilih membantu orang tuanya dalam mencari nafkah. Hal inilah yang membuat kesadaran akan pendidikan menjadi rendah dan mengurangi motivasi untuk belajar.</p>
+      <p class="text-center" style="font-size: 20px; color: #ffffff;">Ini Adalah Sistem Informasi Anak Putus Sekolah
+      </p><br>
+      <p class="text-center" style="font-size: 15px; color: #ffffff;">Anak putus sekolah adalah murid yang tidak dapat menyelesaikan program belajar sebelum waktunya selesai atau murid yang tidak tamat menyelesaikan program belajarnya. Akibat yang disebabkan anak putus sekolah sangat banyak, diantaranya adalah meningkatnya jumlah pengangguran,tawuran dan kebut-kebutan dijalan raya, minum-minuman keras dan perkelahian dan akibat lainnya juga perasaan minder dan rendah diri karena kurangnya pengetahuan yang dimiliki. Jumlah anak putus sekolah di Indonesia cukup banyak, ini terlihat dari banyaknya anak usia sekolah yang mengamen, mengemis di jalanan pada jam-jam sekolah, bahkan ada yang menjadi pemulung dan lebih memilih membantu orang tuanya dalam mencari nafkah. Hal inilah yang membuat kesadaran akan pendidikan menjadi rendah dan mengurangi motivasi untuk belajar.</p>
     </div>
   </div>
 
