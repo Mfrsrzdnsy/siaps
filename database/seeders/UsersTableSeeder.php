@@ -24,7 +24,7 @@ class UsersTableSeeder extends Seeder
                 'password' => Hash::make('111'),
                 'role' => 'admin',
             ],
-            
+
             //agen
             [
                 'name' => 'Agen',
@@ -33,7 +33,7 @@ class UsersTableSeeder extends Seeder
                 'password' => Hash::make('111'),
                 'role' => 'agen',
             ],
-            
+
             //user
             [
                 'name' => 'User',

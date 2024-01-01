@@ -26,7 +26,7 @@
                                 <tbody>
                                     @foreach ($users as $user)
                                         <tr>
-                                            <td><img src="{{ $user->tempat_lahir }}" width="70px" alt=""></td>
+                                            <td><img src="{{ $user->foto }}" width="70px" alt=""></td>
                                             <td>{{ $user->name }}</td>
                                             <td>{{ $user->username }}</td>
                                             <td>{{ $user->email }}</td>
@@ -50,10 +50,10 @@
                                                                     <div class="card-body">
                                                                         <table class="table" border="0">
                                                                             <tr>
-                                                                                <td rowspan="7"><img src="{{ $user->tempat_lahir }}" width="70px" alt=""></td>
+                                                                                <td rowspan="7"><img src="{{ $user->foto }}" width="70px" alt=""></td>
                                                                                 <td>Nama</td>
                                                                                 <td>: {{ $user->name }}</td>
-                                                                                
+
                                                                             </tr>
                                                                             <tr>
                                                                                 <td>User Name</td>
