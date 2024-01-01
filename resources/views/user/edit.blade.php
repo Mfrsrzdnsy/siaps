@@ -12,7 +12,7 @@
                             @method('PUT')
                             <div class="mb-3">
                                 <label for="nama" class="form-label">Nama</label>
-                                <input id="nama" value="{{ $data->nama }}" class="form-control" name="nama"
+                                <input id="nama" value="{{ $data->name }}" class="form-control" name="nama"
                                     type="text">
                             </div>
                             <div class="mb-3">
