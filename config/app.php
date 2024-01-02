@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Facade;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Auth;
 
 return [
 
@@ -187,6 +188,7 @@ return [
         // ...
         'PDF' => Barryvdh\DomPDF\Facade\Pdf::class,
         'Route'     => "Illuminate\Support\Facades\Route",
+        'Auth' => "Illuminate\Support\Facades\Auth",
     ],    
 
 ];
