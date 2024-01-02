@@ -37,6 +37,15 @@
                                     placeholder="Masukan Alamat...">{{ $data->alamat }}</textarea>
                             </div>
                             <div class="mb-3">
+                                <<label class="form-label">Role</label>
+                                <select name="role" class="form-select" aria-label="Default select example" required>
+                                    <option value="">--- Pilih Role ---</option>
+                                    <option value="admin" @if ($data->role === 'admin') selected @endif>Admin</option>
+                                    <option value="user" @if ($data->role === 'user') selected @endif>User</option>
+                                    
+                                </select>
+                            </div>
+                            <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Foto</label>
                                     <input class="form-control" name="foto" type="file" id="image">
                             </div>

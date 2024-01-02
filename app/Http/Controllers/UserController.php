@@ -34,7 +34,7 @@ class UserController extends Controller
         ]);
 
         UserModel::insert([
-            'name' => $request->name,
+            'name' => $request->nama,
             'username' =>  $request->username,
             'email' =>  $request->email,
             'password' =>  $request->password,
@@ -59,7 +59,7 @@ class UserController extends Controller
     {
         $uid = $request->id;
         UserModel::findOrFail($id)->update([
-            'name' => $request->name,
+            'name' => $request->nama,
             'username' =>  $request->username,
             'email' =>  $request->email,
             'password' =>  $request->password,
