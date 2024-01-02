@@ -67,7 +67,7 @@
                             <div class="row mb-3">
                                 <div class="col-md-2">
                                     <label for="exampleInputEmail1" class="form-label"></label>
-                                    <img id="showImage" class="wd-80 rounded-circle" src="{{ (!empty($profileData->foto)) ? 
+                                    <img id="showImage" class="wd-80 rounded-circle" src="{{ (!empty($profileData->foto)) ?
                                         url('upload/admin_images'.$profileData->foto) : url('upload/no_image.jpg') }}" alt="profile" />
                                 </div>
                                 <div class="col-md-10">
@@ -98,5 +98,5 @@
                 reader.readAsDataURL(e.target.files['0']);
             });
         });
-    
+
     </script>

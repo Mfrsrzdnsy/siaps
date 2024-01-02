@@ -30,7 +30,7 @@
                                 <input id="password" value="{{ $data->password }}" class="form-control"
                                     name="password" type="text">
                             </div>
-                            
+
                             <div class="mb-3">
                                 <label for="defaultconfig-4" class="col-form-label">Alamat</label>
                                 <textarea id="maxlength-textarea" class="form-control" name="alamat" maxlength="100" rows="8"

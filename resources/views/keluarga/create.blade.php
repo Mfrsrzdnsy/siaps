@@ -12,7 +12,7 @@
 
                             <div class="row mb-3">
                                 <div class="col-md-6">
-                                    <label for="nama" class="form-label">Nama</label>
+                                    <label for="nama" class="form-label">Nama Anak</label>
                                     <input id="nama" class="form-control" name="nama" type="text">
                                 </div>
                             </div>
