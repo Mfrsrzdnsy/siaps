@@ -13,6 +13,7 @@ use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\KeluargaController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\VuserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -64,6 +65,14 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
 }); //end group admin middleware
 
 //group middleware user
+Route::middleware(['auth', 'role:user'])->group(function () {
+    Route::get('/user/dashboard', [
+        VuserController::class,
+        'UserDashboard'
+    ])->name('user.dashboard');
+});
+
+
 
 //group agen middleware
 Route::middleware(['auth', 'role:agen'])->group(function () {
