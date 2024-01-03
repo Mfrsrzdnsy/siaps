@@ -66,13 +66,13 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
 
 //group middleware user
 Route::middleware(['auth', 'role:user'])->group(function () {
-
     Route::get('/user/dashboard', [
         VuserController::class,
         'UserDashboard'
     ])->name('user.dashboard');
-
 });
+
+
 
 //group agen middleware
 Route::middleware(['auth', 'role:agen'])->group(function () {

@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 
 class VuserController extends Controller
 {
-    public function VusernDashboard(){
-        
-        return view('vuser.index');
+    public function UserDashboard()
+    {
+        return view('vuser.user_dashboard');
     }
 }
