@@ -13,9 +13,10 @@ class AdminController extends Controller
 {
     public function AdminDashboard(){
         $totalSiswa = SiswaModel::count();
-        $totalUser = UserModel::count();
+        $totalUser = UserModel::where('role', 'user')->count();
+        $totalAdmin = UserModel::where('role', 'admin')->count();
 
-        return view('admin.index', compact('totalSiswa', 'totalUser'));
+        return view('admin.index', compact('totalSiswa', 'totalUser', 'totalAdmin'));
     }
 
     public function AdminLogout(Request $request)
