@@ -32,6 +32,7 @@
                     <span class="link-title">Infromasi Keluarga</span>
                 </a>
             </li>
+            @if(auth()->check() && auth()->user()->isAdmin())
             <li class="nav-item nav-category">User</li>
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#emails" role="button" aria-expanded="false" aria-controls="emails">
@@ -50,6 +51,7 @@
               </ul>
             </div>
           </li>
+          @endif
         </ul>
     </div>
 </nav>

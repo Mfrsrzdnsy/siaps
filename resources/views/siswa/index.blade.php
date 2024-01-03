@@ -95,8 +95,10 @@
                                                         </div>
                                                     </div>
                                                 </div>
+
                                                 <a href="{{ route('siswa.edit', $siswa->id_siswa) }}" class="btn btn-warning"
                                                     style="margin-right: 5px;"><i class="far fa-edit"></i></a>
+                                                    @if(auth()->check() && auth()->user()->isAdmin())
                                                     <form id="deleteForm{{ $siswa->id_siswa }}" method="POST" action="{{ route('siswa.destroy', $siswa->id_siswa) }}">
                                                         @csrf
                                                         @method('DELETE')
@@ -105,6 +107,7 @@
                                                             <i class="fas fa-trash-alt"></i>
                                                         </button>
                                                     </form>
+                                                    @endif
                                             </td>
                                         </tr>
                                     @endforeach
