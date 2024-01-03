@@ -93,6 +93,7 @@
                                                 </div>
                                                 <a href="{{ route('keluarga.edit', $keluarga->id_keluarga) }}" class="btn btn-warning"
                                                     style="margin-right: 5px;"><i class="far fa-edit"></i></a>
+                                                    @if(auth()->check() && auth()->user()->isAdmin())
                                                     <form class="delete-form" data-id="{{ $keluarga->id_keluarga }}" method="POST" action="{{ route('keluarga.destroy', $keluarga->id_keluarga) }}">
                                                         @csrf
                                                         @method('DELETE')
@@ -101,6 +102,7 @@
                                                             <i class="fas fa-trash-alt"></i>
                                                         </button>
                                                     </form>
+                                                    @endif
                                             </td>
                                         </tr>
                                     @endforeach

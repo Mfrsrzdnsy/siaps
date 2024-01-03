@@ -70,6 +70,8 @@ Route::middleware(['auth', 'role:user'])->group(function () {
         VuserController::class,
         'UserDashboard'
     ])->name('user.dashboard');
+
+    Route::get('/user/logout', [AdminController::class, 'UserLogout'])->name('user.logout');
 });
 
 
