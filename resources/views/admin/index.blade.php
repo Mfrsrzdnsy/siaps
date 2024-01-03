@@ -13,7 +13,7 @@
     <div class="col">
       <div class="card h-100">
         <div class="card-body">
-          <h5 class="card-title">Jumlah Anak Putus sekolah</h5>
+          <h5 class="card-title">Total Anak Putus sekolah</h5>
           <h2 class="card-text">{{  $totalSiswa }} <i class="bi bi-person-fill"></i></h2>
         </div>
       </div>
@@ -21,7 +21,7 @@
     <div class="col">
       <div class="card h-100">
         <div class="card-body">
-          <h5 class="card-title">Jumlah User</h5>
+          <h5 class="card-title">Total User</h5>
           <h2 class="card-text">{{ $totalUser }} <i class="bi bi-person-fill"></i></h2>
         </div>
       </div>
@@ -29,8 +29,8 @@
     <div class="col">
       <div class="card h-100">
         <div class="card-body">
-          <h5 class="card-title">Jumlah Admin</h5>
-          <h2 class="card-text"><i class="bi bi-person-fill"></i></h2>
+          <h5 class="card-title">Total Admin</h5>
+          <h2 class="card-text">{{ $totalAdmin }} <i class="bi bi-person-fill"></i></h2>
         </div>
       </div>
     </div>
