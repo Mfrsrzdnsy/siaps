@@ -62,14 +62,14 @@ class UserController extends Controller
             'name' => $request->nama,
             'username' =>  $request->username,
             'email' =>  $request->email,
-            'password' =>  $request->password,
+            'password' => $request->password ? bcrypt($request->password) : null,
             'foto' => $request->foto,
             'alamat' => $request->alamat,
             'no_telp' =>  $request->no_telp,
             'role' =>  $request->role
 
         ]);
- 
+
         return redirect()->route('user.index');
 }
 

@@ -111,3 +111,8 @@ Route::get('/register_siaps', [RegisteredUserController::class, 'register']);
 
 
 Route::get('/downloadpdf', [SiswaController::class, 'downloadpdf']);
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
+
