@@ -5,7 +5,7 @@
 {{-- apapun yang berada didalam section akan masuk mengantikan @yield pada main.blade --}}
 @section('container')
 
-<div class="card border border-0 shadow">
+<div class="card border border-0 shadow" >
     <div class="card-body">
       <h3 class="card-title text-center mb-4">Sistem Informasi Anak Putus Sekolah</h3>
       <p class="card-text">

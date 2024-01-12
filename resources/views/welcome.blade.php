@@ -12,6 +12,23 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
 
         <!-- Styles -->
+        <style>
+            body {
+                background-image: url('./image/anak.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 800px;
+                margin: 0; /* Menghilangkan margin default dari body */
+            }
+
+            .overlay {
+                /* Tambahkan overlay jika diperlukan */
+                background-color: rgba(0, 0, 0, 0.5); /* Ubah warna sesuai kebutuhan */
+                height: 100%;
+            }
+
+            /* Tambahkan gaya tambahan sesuai kebutuhan */
+        </style>
     </head>
     <body class="antialiased">
         <div class="relative sm:flex sm:justify-center sm:items-center min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white">
@@ -29,22 +46,23 @@
                 </div>
             @endif
 
-            
+
         </div>
 
-        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center" style="background-color: rgba(255, 255, 255, 0.1);">
             <div class="col-md-5 p-lg-5 mx-auto my-5">
-                <h1 class="display-4 fw-normal">SIAPS</h1>
+                <h1 class="display-4 fw-normal">Si<span style="color: blue">Aps</span></h1>
                 <p class="lead fw-normal">
-                    Kami berharap bahwa Sistem Informasi Anak Putus Sekolah ini dapat menjadi 
-                    jembatan yang kuat untuk membantu mengatasi masalah putus sekolah 
+                    Kami berharap bahwa Sistem Informasi Anak Putus Sekolah ini dapat menjadi
+                    jembatan yang kuat untuk membantu mengatasi masalah putus sekolah
                 </p>
-                <a class="btn btn-outline-secondary" href="{{ url('/home') }}">Go to Home</a>
+                <a class="btn btn-secondary" href="{{ url('/home') }}">Go to Home</a>
             </div>
             <div class="product-device shadow-sm d-none d-md-block"></div>
             <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
         </div>
-        
+
+
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     </body>
