@@ -63,8 +63,8 @@
         </div>
   </main>
 </div>
-  
+
 @endsection
-  
+
 <section style="background-image: url(./image/anak.jpg); background-size: cover; background-repeat: no-repeat; height: 800px;">
  

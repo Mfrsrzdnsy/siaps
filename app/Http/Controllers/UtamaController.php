@@ -21,13 +21,13 @@ class UtamaController extends Controller
     public function profil()
     {
     return view('utama/Profil', [
-        "title" => "profil",  
+        "title" => "profil",
         "nama" => "anak anak",
         "email" => "anakputussekolah@gmail.com",
         "image" => "anak.jpg"
     ]);
     }
-    
+
 
     public function contact()
     {
@@ -35,5 +35,11 @@ class UtamaController extends Controller
     ]);
     }
 
+    public function visimisi()
+    {
+        return view('utama/visimisi', ["title" => "visimisi"
+    ]);
+    }
+
 }
-   
+

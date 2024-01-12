@@ -105,6 +105,8 @@ Route::get('/profil', [UtamaController::class, 'profil']);
 
 Route::get('/contact', [UtamaController::class, 'contact']);
 
+Route::get('/visimisi', [UtamaController::class, 'visimisi']);
+
 Route::get('/login_siaps', [AuthenticatedSessionController::class, 'login']);
 
 Route::get('/register_siaps', [RegisteredUserController::class, 'register']);
