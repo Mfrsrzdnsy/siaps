@@ -53,7 +53,7 @@
                 {{ __('Already registered?') }}
             </a>
 
-            <x-primary-button class="ms-4 text-black">
+            <x-primary-button class="ms-4 text-white">
                 {{ __('Register') }}
             </x-primary-button>
         </div>
@@ -61,4 +61,3 @@
 </x-guest-layout>
 
 @endsection
-<section style="background-image: url(./image/anak.jpg); background-size: cover; background-repeat: no-repeat; height: 800px;">
