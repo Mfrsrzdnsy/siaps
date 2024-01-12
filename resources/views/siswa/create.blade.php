@@ -92,6 +92,18 @@
                                 </div>
                             </div>
 
+                            <div class="row mb-3">
+                                <!-- Field formulir yang sudah ada... -->
+
+                                <div class="col-md-6">
+                                    <label for="foto" class="form-label">Foto</label>
+                                    <input id="foto" class="form-control" name="foto" type="file">
+                                    @error('photo')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
+                                </div>
+                            </div>
+
                             <div class="row">
                                 <div class="col-md-6">
                                     <button type="submit" class="btn btn-primary"> Simpan</button>

@@ -20,6 +20,7 @@ class SiswaModel extends Model
         'alamat',
         'pendidikan_terakhir',
         'deskripsi',
+        'foto',
     ];
 
     protected $dates = ['tanggal_lahir'];

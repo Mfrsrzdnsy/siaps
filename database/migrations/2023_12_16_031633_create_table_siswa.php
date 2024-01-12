@@ -21,6 +21,7 @@ return new class extends Migration
             $table->text('alamat');
             $table->string('pendidikan_terakhir', 255);
             $table->text('deskripsi');
+            $table->string('foto');
             $table->timestamps();
         });
     }

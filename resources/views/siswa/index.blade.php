@@ -54,6 +54,7 @@
                                                                             <tr>
                                                                                 <td>Nama</td>
                                                                                 <td>: {{ $siswa->nama }}</td>
+                                                                                <td rowspan="7"><img src="{{ asset('storage/' . $siswa->foto) }}" width="100%" alt=""></td>
                                                                             </tr>
                                                                             <tr>
                                                                                 <td>NIS</td>

@@ -20,6 +20,12 @@ class SiswaController extends Controller
         return view('siswa.create');
     }
 
+    private function uploadFoto($file)
+    {
+        $path = $file->store('siswa_fotos', 'public');
+        return $path;
+    }
+
     public function store(Request $request)
     {
 
@@ -32,7 +38,10 @@ class SiswaController extends Controller
             'alamat' => 'required|string',
             'pendidikan_terakhir' => 'required|string|max:255',
             'deskripsi' => 'required|string',
+            'foto' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
+
+        $fotoPath = $this->uploadFoto($request->file('foto'));
 
         SiswaModel::insert([
             'nis' => $request->nis,
@@ -43,6 +52,8 @@ class SiswaController extends Controller
             'alamat' => $request->alamat,
             'pendidikan_terakhir' =>  $request->pendidikan_terakhir,
             'deskripsi' =>  $request->deskripsi,
+            'foto' => $fotoPath,
+
         ]);
 
         return redirect()->route('siswa.index')->with('success', 'Data Anak Berhasil Ditambahkan !!!');
