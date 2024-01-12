@@ -70,6 +70,9 @@ class SiswaController extends Controller
      */
     public function update(Request $request, $id)
     {
+
+        $fotoPath = $this->uploadFoto($request->file('foto'));
+        
         $sid = $request->id;
         SiswaModel::findOrFail($id)->update([
             'nis' => $request->nis,
@@ -80,6 +83,7 @@ class SiswaController extends Controller
             'alamat' => $request->alamat,
             'pendidikan_terakhir' =>  $request->pendidikan_terakhir,
             'deskripsi' =>  $request->deskripsi,
+            'foto' => $fotoPath,
 
         ]);
 
