@@ -8,16 +8,22 @@
     {{-- <link rel="stylesheet" href="style.css"> --}}
     {{-- bootstrap icon --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <style>
+      body {
+          background-image: url('./image/anak.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          height: 800px;
+          margin: 0; /* Menghilangkan margin default dari body */
+      }
+    </style>
   </head>
   <body>
     
-    
-      
-      {{-- beritahukan bahwa disini akan tersimpan sebuah navbar yang diambil dari halaman parsial.navbar --}}
+  
       @include('partials.navbarhome')
       
 
-      {{-- mt=margin top --}}
       <div class="container mt-4">
        @yield('container')
        

@@ -18,9 +18,6 @@
                     <a class="nav-link {{ ($title === "profil") ? 'active' : '' }}" href="/profil">Profile</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ ($title === "visimisi") ? 'active' : '' }}" href="/visimisi">Visi Misi</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link {{ ($title === "contact") ? 'active' : '' }}" href="/contact">Contact</a>
                 </li>
             </ul>

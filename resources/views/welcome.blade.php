@@ -49,10 +49,10 @@
 
         </div>
 
-        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center" style="background-color: rgba(255, 255, 255, 0.1);">
+        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
             <div class="col-md-5 p-lg-5 mx-auto my-5">
                 <h1 class="display-4 fw-normal">Si<span style="color: blue">Aps</span></h1>
-                <p class="lead fw-normal">
+                <p class="lead fw-normal" style="color: #000000; ">
                     Kami berharap bahwa Sistem Informasi Anak Putus Sekolah ini dapat menjadi
                     jembatan yang kuat untuk membantu mengatasi masalah putus sekolah
                 </p>
