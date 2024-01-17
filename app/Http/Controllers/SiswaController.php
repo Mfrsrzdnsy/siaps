@@ -72,7 +72,7 @@ class SiswaController extends Controller
     {
 
         $fotoPath = $this->uploadFoto($request->file('foto'));
-        
+            
         $sid = $request->id;
         SiswaModel::findOrFail($id)->update([
             'nis' => $request->nis,
